@@ -6,11 +6,12 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 import static interfaces.TestPriority.HIGH;
+import static interfaces.TimeOut.SLOW;
 import static org.testng.Assert.assertEquals;
 
 public class Get404 extends BaseClass{
 
-    @Test(timeOut = 1000, description ="Verify 404 status code for GET method for a nonexisting URL")
+    @Test(timeOut = SLOW, description ="Verify 404 status code for GET method for a nonexisting URL")
     public void nonExistingUrlReturns404() throws IOException {
 
         HttpGet get = new HttpGet(BASE_ENDPOINT + "/nonexistingurl");
@@ -22,13 +23,13 @@ public class Get404 extends BaseClass{
         assertEquals(actualStatus, 404);
     }
 
-    @Test(dependsOnGroups = "DELETE", dataProvider = "OrderNotFound", dataProviderClass = CommonApiDataProviders.class, timeOut = 1000, description ="Verify 404 status code for GET method for order not found")
+    @Test(dataProvider = "OrderNotFound", dataProviderClass = CommonApiDataProviders.class, timeOut = SLOW, description ="Verify 404 status code for GET method for order not found")
     public void searchOrderByID404(String orderNumber) throws IOException {
 
         getStatusFotGetResponse(orderNumber, 404);
     }
 
-    @Test(dataProvider = "invalidOrderNumber", dataProviderClass = CommonApiDataProviders.class, timeOut = 1000, description ="Verify 400 status code for GET method with Invalid ID supplied")
+    @Test(dataProvider = "invalidOrderNumber", dataProviderClass = CommonApiDataProviders.class, timeOut = SLOW, description ="Verify 400 status code for GET method with Invalid ID supplied")
     public void searchOrderByID400(String orderNumber) throws IOException {
 
         getStatusFotGetResponse(orderNumber, 400);
