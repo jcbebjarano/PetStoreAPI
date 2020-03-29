@@ -13,7 +13,7 @@ public class Retry implements IRetryAnalyzer {
     static final Logger log = LoggerFactory.getLogger(Retry.class);
 
     private int count = 0;
-    private static int maxTry = 3;
+    private static int maxTry = 2;
 
     @Override
     public boolean retry(ITestResult iTestResult) {

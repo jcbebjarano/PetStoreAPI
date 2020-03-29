@@ -1,0 +1,113 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="All Tests">
+    <listeners>
+        <listener class-name="listeners.TestStatus">listener</listener>
+    </listeners>
+
+    <test name="POST_200">
+        <groups>
+            <define name="POST">
+                <include name="POST"></include>
+            </define>
+        </groups>
+        <classes>
+            <class name="DeleteAndPost">
+                <methods>
+                    <include name="createOrder200"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="GET_200">
+        <classes>
+            <class name="Get200">
+                <methods>
+                    <include name="inventoryReturns200"></include>
+                    <include name="searchOrderByID200"></include>
+                </methods>
+            </class>
+            <class name="BodyTest">
+                <methods>
+                    <include name="returnsCorrectOrderBodyResponse"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="DELETE_200">
+        <classes>
+            <class name="DeleteAndPost">
+                <methods>
+                    <include name="deleteIsSuccessful"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+    <test name="GET_404">
+        <classes>
+            <class name="Get404">
+                <methods>
+                    <include name="searchOrderByID404"></include>
+                </methods>
+            </class>
+            <class name="DeleteAndPost">
+                <methods>
+                    <include name="deleteOrderNotFound"></include>
+                </methods>
+            </class>
+            <class name="BodyTest">
+                <methods>
+                    <include name="notFoundMessageIsCorrect"></include>
+                    <include name="deleteNotFoundMessageIsCorrect"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="RESPONSE_HEADERS">
+        <classes>
+            <class name="Options204">
+                <methods>
+                    <include name="optionsReturnsCorrectMethodsList"></include>
+                </methods>
+            </class>
+            <class name="ResponseHeaders">
+                <methods>
+                    <include name="contentTypeIsJson"></include>
+                    <include name="serverIsJetty"></include>
+                    <include name="dateIsPresent"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="NEGATIVE_TEST">
+        <classes>
+            <class name="DeleteAndPost">
+                <methods>
+                    <include name="createInvalidOrder400"></include>
+                    <include name="createOrder500"></include>
+                    <include name="deleteInvalidIDSupplied"></include>
+                </methods>
+            </class>
+            <class name="BodyTest">
+                <methods>
+                    <include name="invalidIDSuppliedMessageIsCorrect"></include>
+                    <include name="deleteInvalidIDMessageIsCorrect"></include>
+                </methods>
+            </class>
+            <class name="Get404">
+                <methods>
+                    <include name="searchOrderByID400"></include>
+                    <include name="nonExistingUrlReturns404"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

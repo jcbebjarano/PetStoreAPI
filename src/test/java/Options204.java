@@ -4,9 +4,11 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static interfaces.TimeOut.SLOW;
+
 public class Options204 extends BaseClass {
 
-    @Test(timeOut = 1000, description = "Function to test only the response header content.")
+    @Test(timeOut = SLOW, description = "Function to test only the response header content.")
     public void optionsReturnsCorrectMethodsList() throws IOException {
 
         String header = "Access-Control-Allow-Methods";
