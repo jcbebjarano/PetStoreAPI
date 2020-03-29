@@ -1,99 +1,82 @@
-import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import entities.NotFound;
 import java.io.IOException;
-
+import org.testng.asserts.SoftAssert;
 import  entities.Order;
+
+import static interfaces.TestPriority.HIGH;
 import static org.testng.Assert.assertEquals;
 
 public class BodyTest extends BaseClass {
 
-    @DataProvider
-    private Object[][] orderNumber(){
-        //For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors
-        return new Object[][]{
-                {1}
-        };
+
+
+
+    @Test(priority = HIGH, dependsOnGroups = "POST", dataProvider = "validOrderNumber", dataProviderClass = CommonApiDataProviders.class, timeOut = 1000, description ="Validate response body values")
+    public void returnsCorrectOrderBodyResponse(String orderNumber) throws IOException {
+
+        SoftAssert sa = new SoftAssert();
+
+
+        Order orderValue = getValueFor(orderNumber, Order.class);
+
+        // Assert
+        System.out.println("First assert Order ID");
+        sa.assertEquals(orderValue.getId(), 1);
+        System.out.println("Second assert Pet Id");
+        sa.assertEquals(orderValue.getPetId(), 1);
+        System.out.println("Third assert Quantity");
+        sa.assertEquals(orderValue.getQuantity(), 1);
+        System.out.println("Fourth assert Ship Date");
+        sa.assertEquals(orderValue.getShipDate(), 1);
+        System.out.println("Fifth assert Status");
+        sa.assertEquals(orderValue.getStatus(), 1);
+        System.out.println("Sixth assert Complete");
+        sa.assertEquals(orderValue.getComplete(), 1);
+
+        sa.assertAll();
     }
 
+    @Test(dependsOnGroups = "DELETE", dataProvider = "OrderNotFound", dataProviderClass = CommonApiDataProviders.class, expectedExceptionsMessageRegExp = ".*not found", timeOut = 1000, description ="Validate not found message in GET order responde body")
+    public void notFoundMessageIsCorrect(String orderNumber) throws IOException {
 
-    @Test(dataProvider = "orderNumber")
-    public void returnsCorrectOrderId(Integer orderNumber) throws IOException {
+        SoftAssert sa = new SoftAssert();
 
-        response = getValueFor(orderNumber);
+        NotFound notFoundValue = getValueFor(orderNumber, NotFound.class);
 
-        Order idValue = ResponseUtils.unmarshallGeneric(response, Order.class);
+        System.out.println("First assert Type");
+        sa.assertEquals(notFoundValue.getType(), "error");
+        System.out.println("Second assert Message");
+        sa.assertEquals(notFoundValue.getMessage(), "Order not found");
 
-        assertEquals(idValue.getId(), 1);
-    }
-    @Test(dataProvider = "orderNumber")
-    public void returnsCorrectOrderPetid(Integer orderNumber) throws IOException {
-
-        response = getValueFor(orderNumber);
-
-        Order petidValue = ResponseUtils.unmarshallGeneric(response, Order.class);
-
-        assertEquals(petidValue.getPetId(), 1);
-    }
-    @Test(dataProvider = "orderNumber")
-    public void returnsCorrectOrderQuantity(Integer orderNumber) throws IOException {
-
-        response = getValueFor(orderNumber);
-
-        Order quantityValue = ResponseUtils.unmarshallGeneric(response, Order.class);
-
-        assertEquals(quantityValue.getQuantity(), 1);
-    }
-    @Test(dataProvider = "orderNumber")
-    public void returnsCorrectOrderShipdate(Integer orderNumber) throws IOException {
-
-        response = getValueFor(orderNumber);
-
-        Order shipdateValue = ResponseUtils.unmarshallGeneric(response, Order.class);
-
-        assertEquals(shipdateValue.getShipDate(), 1);
-    }
-    @Test(dataProvider = "orderNumber")
-    public void returnsCorrectOrderStatus(Integer orderNumber) throws IOException {
-
-        response = getValueFor(orderNumber);
-
-        Order statusValue = ResponseUtils.unmarshallGeneric(response, Order.class);
-
-        assertEquals(statusValue.getStatus(), 1);
-    }
-    @Test(dataProvider = "orderNumber")
-    public void returnsCorrectOrderComplete(Integer orderNumber) throws IOException {
-
-        response = getValueFor(orderNumber);
-
-        Order completeValue = ResponseUtils.unmarshallGeneric(response, Order.class);
-
-        assertEquals(completeValue.getComplete(), 1);
+        sa.assertAll();
     }
 
+    @Test(dataProvider = "invalidOrderNumber", dataProviderClass = CommonApiDataProviders.class, expectedExceptionsMessageRegExp = ".*Invalid ID", timeOut = 1000, description ="Validate Invalid ID supplied message in GET order responde body")
+    public void invalidIDSuppliedMessageIsCorrect(String orderNumber) throws IOException {
 
-    @Test
-    public void notFoundMessageIsCorrect() throws IOException {
+        SoftAssert sa = new SoftAssert();
 
-        HttpGet get = new HttpGet(BASE_ENDPOINT + "/order/10");
+        NotFound notFoundValue = getValueFor(orderNumber, NotFound.class);
 
-        response = client.execute(get);
+        System.out.println("First assert Type");
+        sa.assertEquals(notFoundValue.getType(), "error");
+        System.out.println("Second assert Message");
+        sa.assertEquals(notFoundValue.getMessage(), "Invalid ID supplied");
 
-        NotFound notFoundMessage = ResponseUtils.unmarshallGeneric(response, NotFound.class);
-
-        assertEquals(notFoundMessage.getMessage(), "Order not found");
+        sa.assertAll();
     }
 
-    private CloseableHttpResponse getValueFor(Integer orderNumber) throws IOException{
+    private <T> T getValueFor(String orderNumber, Class<T> clazz) throws IOException{
 
         HttpGet get = new HttpGet(BASE_ENDPOINT + "/order/"+ orderNumber);
 
         response = client.execute(get);
 
-        return response;
+        T classValue = ResponseUtils.unmarshallGeneric(response, clazz);
+
+        return classValue;
     }
 
 

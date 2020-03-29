@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Options204 extends BaseClass {
 
-    @Test
+    @Test(timeOut = 1000, description = "Function to test only the response header content.")
     public void optionsReturnsCorrectMethodsList() throws IOException {
 
         String header = "Access-Control-Allow-Methods";
