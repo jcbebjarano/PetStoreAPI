@@ -1,14 +1,17 @@
 import org.apache.http.client.methods.HttpGet;
+import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static interfaces.TestPriority.HIGH;
 import static org.testng.Assert.assertEquals;
 
 public class Get200 extends BaseClass{
 
-    @Test
+    @Test(priority = HIGH, timeOut = 1000, description ="Verify inventory web service returns 200 status code")
     public void inventoryReturns200() throws IOException {
 
         HttpGet get = new HttpGet(BASE_ENDPOINT + "/inventory");
@@ -20,29 +23,25 @@ public class Get200 extends BaseClass{
         assertEquals(actualStatus, 200);
     }
 
-    @DataProvider
-    private Object[][] orderNumber(){
-        return new Object[][]{
-                //For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions
-                {1},
-                {11} // invalid value
-        };
+
+    @Test(priority = HIGH, dependsOnGroups = "POST", dataProvider = "validOrderNumber", dataProviderClass = CommonApiDataProviders.class, timeOut = 1000, description ="Verify 200 status code for GET method in order to find purchase order by ID")
+    public void searchOrderByID200(String orderNumber) throws IOException {
+
+        getStatusFotGetResponse(orderNumber, 200);
     }
-    @Test(dataProvider = "orderNumber")
-    public void searchOrderByID200(Integer orderNumber) throws IOException {
 
-        HttpGet get = new HttpGet(BASE_ENDPOINT + "/order/" + orderNumber);
+    public void getStatusFotGetResponse(String orderNumber, int expectedStatusCode) throws IOException{
 
-        response = client.execute(get);
+        HttpGet request = new HttpGet(BASE_ENDPOINT + "/order/" + orderNumber);
 
-        int actualStatus = response.getStatusLine().getStatusCode();
+        response = client.execute(request);
+        int actualStatusCode = response.getStatusLine().getStatusCode();
 
-        if (orderNumber >= 1 && orderNumber <= 10 ){
-            assertEquals(actualStatus, 200);
-        }else {
-            assertEquals(actualStatus, 404); // NEGATIVE TEST
+        Assert.assertEquals(actualStatusCode, expectedStatusCode);
+
+        if(actualStatusCode != expectedStatusCode){
+            throw new SkipException("Basic criteria failed," +
+                    "was expecting code "+expectedStatusCode+", but got: " + actualStatusCode);
         }
-
-
     }
 }
