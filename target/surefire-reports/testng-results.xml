@@ -1,0 +1,2364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="8" failed="28" ignored="31" total="86" passed="19">
+  <reporter-output>
+  </reporter-output>
+  <suite name="All Tests" duration-ms="51954" started-at="2020-03-30T01:11:02Z" finished-at="2020-03-30T01:11:54Z">
+    <groups>
+      <group name="DELETE">
+        <method signature="DeleteAndPost.deleteIsSuccessful(java.lang.String)[pri:-10, instance:DeleteAndPost@2669b199]" name="deleteIsSuccessful" class="DeleteAndPost"/>
+      </group> <!-- DELETE -->
+      <group name="POST">
+        <method signature="DeleteAndPost.createOrder200(java.lang.String)[pri:-10, instance:DeleteAndPost@4909b8da]" name="createOrder200" class="DeleteAndPost"/>
+      </group> <!-- POST -->
+    </groups>
+    <test name="POST_200" duration-ms="1040" started-at="2020-03-30T01:11:02Z" finished-at="2020-03-30T01:11:03Z">
+      <class name="DeleteAndPost">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@4909b8da]" name="setup" is-config="true" duration-ms="249" started-at="2020-03-30T01:11:02Z" finished-at="2020-03-30T01:11:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createOrder200(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createOrder200(java.lang.String)[pri:-10, instance:DeleteAndPost@4909b8da]" name="createOrder200" duration-ms="766" started-at="2020-03-30T01:11:02Z" description="Verify place an order for a pet 200 status code by POST method" data-provider="validPostJson" finished-at="2020-03-30T01:11:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrder200 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@4909b8da]" name="closeResources" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:03Z" finished-at="2020-03-30T01:11:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- DeleteAndPost -->
+    </test> <!-- POST_200 -->
+    <test name="GET_200" duration-ms="1306" started-at="2020-03-30T01:11:08Z" finished-at="2020-03-30T01:11:09Z">
+      <class name="Get200">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:Get200@3c09711b]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:08Z" finished-at="2020-03-30T01:11:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Get200.inventoryReturns200() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="inventoryReturns200()[pri:-10, instance:Get200@3c09711b]" name="inventoryReturns200" duration-ms="351" started-at="2020-03-30T01:11:08Z" description="Verify inventory web service returns 200 status code" finished-at="2020-03-30T01:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inventoryReturns200 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:Get200@3c09711b]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:08Z" finished-at="2020-03-30T01:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:Get200@3c09711b]" name="setup" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:08Z" finished-at="2020-03-30T01:11:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Get200.searchOrderByID200(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchOrderByID200(java.lang.String)[pri:-10, instance:Get200@3c09711b]" name="searchOrderByID200" duration-ms="366" started-at="2020-03-30T01:11:08Z" description="Verify 200 status code for GET method in order to find purchase order by ID" data-provider="validOrderNumber" finished-at="2020-03-30T01:11:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOrderByID200 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:Get200@3c09711b]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:08Z" finished-at="2020-03-30T01:11:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- Get200 -->
+      <class name="BodyTest">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@5cc7c2a6]" name="setup" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:08Z" finished-at="2020-03-30T01:11:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.returnsCorrectOrderBodyResponse(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="returnsCorrectOrderBodyResponse(java.lang.String)[pri:-10, instance:BodyTest@5cc7c2a6]" name="returnsCorrectOrderBodyResponse" duration-ms="577" started-at="2020-03-30T01:11:08Z" description="Validate response body values" data-provider="validOrderNumber" finished-at="2020-03-30T01:11:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- returnsCorrectOrderBodyResponse -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@5cc7c2a6]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:09Z" finished-at="2020-03-30T01:11:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- BodyTest -->
+    </test> <!-- GET_200 -->
+    <test name="DELETE_200" duration-ms="385" started-at="2020-03-30T01:11:14Z" finished-at="2020-03-30T01:11:14Z">
+      <class name="DeleteAndPost">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@2669b199]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:14Z" finished-at="2020-03-30T01:11:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteIsSuccessful(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deleteIsSuccessful(java.lang.String)[pri:-10, instance:DeleteAndPost@2669b199]" name="deleteIsSuccessful" duration-ms="379" started-at="2020-03-30T01:11:14Z" description="Verify delete an order 200 status code by DELETE method" data-provider="validOrderNumber" finished-at="2020-03-30T01:11:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteIsSuccessful -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@2669b199]" name="closeResources" is-config="true" duration-ms="4" started-at="2020-03-30T01:11:14Z" finished-at="2020-03-30T01:11:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- DeleteAndPost -->
+    </test> <!-- DELETE_200 -->
+    <test name="GET_404" duration-ms="2711" started-at="2020-03-30T01:11:19Z" finished-at="2020-03-30T01:11:22Z">
+      <class name="BodyTest">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@1efbd816]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:20Z" finished-at="2020-03-30T01:11:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.notFoundMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="notFoundMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@1efbd816]" name="notFoundMessageIsCorrect" duration-ms="381" started-at="2020-03-30T01:11:20Z" description="Validate not found message in GET order responde body" data-provider="OrderNotFound" finished-at="2020-03-30T01:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- notFoundMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@1efbd816]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:21Z" finished-at="2020-03-30T01:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@1efbd816]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:21Z" finished-at="2020-03-30T01:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteNotFoundMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="deleteNotFoundMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@1efbd816]" name="deleteNotFoundMessageIsCorrect" duration-ms="472" started-at="2020-03-30T01:11:21Z" description="Validate not found message in DELETE order responde body" data-provider="OrderNotFound" finished-at="2020-03-30T01:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteNotFoundMessageIsCorrect(BodyTest.java:86)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNotFoundMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@1efbd816]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:21Z" finished-at="2020-03-30T01:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@1efbd816]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:21Z" finished-at="2020-03-30T01:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteNotFoundMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="deleteNotFoundMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@1efbd816]" name="deleteNotFoundMessageIsCorrect" duration-ms="369" started-at="2020-03-30T01:11:21Z" description="Validate not found message in DELETE order responde body" data-provider="OrderNotFound" finished-at="2020-03-30T01:11:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteNotFoundMessageIsCorrect(BodyTest.java:86)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNotFoundMessageIsCorrect -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@1efbd816]" name="setup" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:22Z" finished-at="2020-03-30T01:11:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteNotFoundMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@1efbd816]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:22Z" finished-at="2020-03-30T01:11:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="FAIL" signature="deleteNotFoundMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@1efbd816]" name="deleteNotFoundMessageIsCorrect" duration-ms="379" started-at="2020-03-30T01:11:22Z" description="Validate not found message in DELETE order responde body" data-provider="OrderNotFound" finished-at="2020-03-30T01:11:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteNotFoundMessageIsCorrect(BodyTest.java:86)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNotFoundMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@1efbd816]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:22Z" finished-at="2020-03-30T01:11:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- BodyTest -->
+      <class name="Get404">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:Get404@174d20a]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:19Z" finished-at="2020-03-30T01:11:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Get404.searchOrderByID404(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="searchOrderByID404(java.lang.String)[pri:0, instance:Get404@174d20a]" name="searchOrderByID404" duration-ms="700" started-at="2020-03-30T01:11:19Z" description="Verify 404 status code for GET method for order not found" data-provider="OrderNotFound" finished-at="2020-03-30T01:11:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOrderByID404 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:Get404@174d20a]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:20Z" finished-at="2020-03-30T01:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- Get404 -->
+      <class name="DeleteAndPost">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@66d2e7d9]" name="setup" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:20Z" finished-at="2020-03-30T01:11:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteOrderNotFound(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="deleteOrderNotFound(java.lang.String)[pri:0, instance:DeleteAndPost@66d2e7d9]" name="deleteOrderNotFound" duration-ms="389" started-at="2020-03-30T01:11:20Z" description="Verify delete an order 404 status code when the order not found" data-provider="OrderNotFound" finished-at="2020-03-30T01:11:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteOrderNotFound -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@66d2e7d9]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:20Z" finished-at="2020-03-30T01:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- DeleteAndPost -->
+    </test> <!-- GET_404 -->
+    <test name="RESPONSE_HEADERS" duration-ms="4017" started-at="2020-03-30T01:11:27Z" finished-at="2020-03-30T01:11:31Z">
+      <class name="Options204">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:Options204@6d78f375]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:31Z" finished-at="2020-03-30T01:11:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Options204.optionsReturnsCorrectMethodsList() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="optionsReturnsCorrectMethodsList()[pri:0, instance:Options204@6d78f375]" name="optionsReturnsCorrectMethodsList" duration-ms="407" started-at="2020-03-30T01:11:31Z" description="Function to test only the response header content." finished-at="2020-03-30T01:11:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- optionsReturnsCorrectMethodsList -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:Options204@6d78f375]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:31Z" finished-at="2020-03-30T01:11:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- Options204 -->
+      <class name="ResponseHeaders">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:ResponseHeaders@50c87b21]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:27Z" finished-at="2020-03-30T01:11:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ResponseHeaders.contentTypeIsJson(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="contentTypeIsJson(java.lang.String)[pri:-10, instance:ResponseHeaders@50c87b21]" name="contentTypeIsJson" duration-ms="345" started-at="2020-03-30T01:11:27Z" description="Validate response header content type is Json" data-provider="endpoints" finished-at="2020-03-30T01:11:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/inventory]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentTypeIsJson -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:ResponseHeaders@50c87b21]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:27Z" finished-at="2020-03-30T01:11:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:ResponseHeaders@50c87b21]" name="setup" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:27Z" finished-at="2020-03-30T01:11:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ResponseHeaders.contentTypeIsJson(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="contentTypeIsJson(java.lang.String)[pri:-10, instance:ResponseHeaders@50c87b21]" name="contentTypeIsJson" duration-ms="1531" started-at="2020-03-30T01:11:27Z" description="Validate response header content type is Json" data-provider="endpoints" finished-at="2020-03-30T01:11:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/order/1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contentTypeIsJson -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:ResponseHeaders@50c87b21]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:29Z" finished-at="2020-03-30T01:11:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:ResponseHeaders@50c87b21]" name="setup" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:29Z" finished-at="2020-03-30T01:11:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ResponseHeaders.serverIsJetty(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="serverIsJetty(java.lang.String)[pri:-10, instance:ResponseHeaders@50c87b21]" name="serverIsJetty" duration-ms="405" started-at="2020-03-30T01:11:29Z" description="Validate response header server is Jetty" data-provider="endpoints" finished-at="2020-03-30T01:11:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/inventory]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serverIsJetty -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:ResponseHeaders@50c87b21]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:29Z" finished-at="2020-03-30T01:11:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:ResponseHeaders@50c87b21]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:29Z" finished-at="2020-03-30T01:11:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ResponseHeaders.serverIsJetty(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="serverIsJetty(java.lang.String)[pri:-10, instance:ResponseHeaders@50c87b21]" name="serverIsJetty" duration-ms="457" started-at="2020-03-30T01:11:29Z" description="Validate response header server is Jetty" data-provider="endpoints" finished-at="2020-03-30T01:11:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/order/1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- serverIsJetty -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:ResponseHeaders@50c87b21]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:30Z" finished-at="2020-03-30T01:11:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:ResponseHeaders@50c87b21]" name="setup" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:30Z" finished-at="2020-03-30T01:11:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ResponseHeaders.dateIsPresent(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dateIsPresent(java.lang.String)[pri:-10, instance:ResponseHeaders@50c87b21]" name="dateIsPresent" duration-ms="424" started-at="2020-03-30T01:11:30Z" description="Validate response header date field is present" data-provider="endpoints" finished-at="2020-03-30T01:11:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/inventory]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dateIsPresent -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:ResponseHeaders@50c87b21]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:30Z" finished-at="2020-03-30T01:11:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:ResponseHeaders@50c87b21]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:30Z" finished-at="2020-03-30T01:11:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ResponseHeaders.dateIsPresent(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="dateIsPresent(java.lang.String)[pri:-10, instance:ResponseHeaders@50c87b21]" name="dateIsPresent" duration-ms="429" started-at="2020-03-30T01:11:30Z" description="Validate response header date field is present" data-provider="endpoints" finished-at="2020-03-30T01:11:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/order/1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dateIsPresent -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:ResponseHeaders@50c87b21]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:31Z" finished-at="2020-03-30T01:11:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- ResponseHeaders -->
+    </test> <!-- RESPONSE_HEADERS -->
+    <test name="NEGATIVE_TEST" duration-ms="17440" started-at="2020-03-30T01:11:36Z" finished-at="2020-03-30T01:11:54Z">
+      <class name="BodyTest">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:45Z" finished-at="2020-03-30T01:11:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.invalidIDSuppliedMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="invalidIDSuppliedMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="invalidIDSuppliedMessageIsCorrect" duration-ms="954" started-at="2020-03-30T01:11:45Z" description="Validate Invalid ID supplied message in GET order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Invalid ID supplied] but found [Order not found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Invalid ID supplied] but found [Order not found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidIDSuppliedMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:46Z" finished-at="2020-03-30T01:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:46Z" finished-at="2020-03-30T01:11:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.invalidIDSuppliedMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="invalidIDSuppliedMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="invalidIDSuppliedMessageIsCorrect" duration-ms="496" started-at="2020-03-30T01:11:46Z" description="Validate Invalid ID supplied message in GET order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Invalid ID supplied] but found [Order not found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Invalid ID supplied] but found [Order not found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidIDSuppliedMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:47Z" finished-at="2020-03-30T01:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:47Z" finished-at="2020-03-30T01:11:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.invalidIDSuppliedMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="invalidIDSuppliedMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="invalidIDSuppliedMessageIsCorrect" duration-ms="379" started-at="2020-03-30T01:11:47Z" description="Validate Invalid ID supplied message in GET order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidIDSuppliedMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:47Z" finished-at="2020-03-30T01:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:47Z" finished-at="2020-03-30T01:11:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.invalidIDSuppliedMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="invalidIDSuppliedMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="invalidIDSuppliedMessageIsCorrect" duration-ms="365" started-at="2020-03-30T01:11:47Z" description="Validate Invalid ID supplied message in GET order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Invalid ID supplied] but found [Order not found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Invalid ID supplied] but found [Order not found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidIDSuppliedMessageIsCorrect -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:47Z" finished-at="2020-03-30T01:11:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:47Z" finished-at="2020-03-30T01:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="SKIP" signature="deleteInvalidIDMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="deleteInvalidIDMessageIsCorrect" duration-ms="448" started-at="2020-03-30T01:11:47Z" description="Validate invalid ID supplied message in DELETE order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:48Z" finished-at="2020-03-30T01:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:48Z" finished-at="2020-03-30T01:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="deleteInvalidIDMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="deleteInvalidIDMessageIsCorrect" duration-ms="355" started-at="2020-03-30T01:11:48Z" description="Validate invalid ID supplied message in DELETE order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:48Z" finished-at="2020-03-30T01:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:48Z" finished-at="2020-03-30T01:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="deleteInvalidIDMessageIsCorrect" duration-ms="532" started-at="2020-03-30T01:11:48Z" description="Validate invalid ID supplied message in DELETE order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:49Z" finished-at="2020-03-30T01:11:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:49Z" finished-at="2020-03-30T01:11:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="deleteInvalidIDMessageIsCorrect" duration-ms="407" started-at="2020-03-30T01:11:49Z" description="Validate invalid ID supplied message in DELETE order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDMessageIsCorrect -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:49Z" finished-at="2020-03-30T01:11:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:49Z" finished-at="2020-03-30T01:11:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="FAIL" signature="deleteInvalidIDMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="deleteInvalidIDMessageIsCorrect" duration-ms="454" started-at="2020-03-30T01:11:49Z" description="Validate invalid ID supplied message in DELETE order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:50Z" finished-at="2020-03-30T01:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:50Z" finished-at="2020-03-30T01:11:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="deleteInvalidIDMessageIsCorrect" duration-ms="438" started-at="2020-03-30T01:11:50Z" description="Validate invalid ID supplied message in DELETE order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDMessageIsCorrect -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:50Z" finished-at="2020-03-30T01:11:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:50Z" finished-at="2020-03-30T01:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="FAIL" signature="deleteInvalidIDMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="deleteInvalidIDMessageIsCorrect" duration-ms="450" started-at="2020-03-30T01:11:50Z" description="Validate invalid ID supplied message in DELETE order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDMessageIsCorrect -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:51Z" finished-at="2020-03-30T01:11:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:51Z" finished-at="2020-03-30T01:11:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="deleteInvalidIDMessageIsCorrect" duration-ms="410" started-at="2020-03-30T01:11:51Z" description="Validate invalid ID supplied message in DELETE order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDMessageIsCorrect -->
+        <test-method status="FAIL" signature="deleteInvalidIDMessageIsCorrect(java.lang.String)[pri:0, instance:BodyTest@23ceabc1]" name="deleteInvalidIDMessageIsCorrect" duration-ms="383" started-at="2020-03-30T01:11:51Z" description="Validate invalid ID supplied message in DELETE order responde body" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [error] but found [unknown],
+expected [Invalid ID supplied] but found [Order Not Found]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDMessageIsCorrect -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:BodyTest@23ceabc1]" name="setup" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:51Z" finished-at="2020-03-30T01:11:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:51Z" finished-at="2020-03-30T01:11:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:BodyTest@23ceabc1]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:51Z" finished-at="2020-03-30T01:11:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- BodyTest -->
+      <class name="Get404">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:Get404@5d5eef3d]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:51Z" finished-at="2020-03-30T01:11:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Get404.searchOrderByID400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="searchOrderByID400(java.lang.String)[pri:0, instance:Get404@5d5eef3d]" name="searchOrderByID400" duration-ms="451" started-at="2020-03-30T01:11:51Z" description="Verify 400 status code for GET method with Invalid ID supplied" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [404]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at Get404.getStatusFotGetResponse(Get404.java:45)
+at Get404.searchOrderByID400(Get404.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOrderByID400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:Get404@5d5eef3d]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:52Z" finished-at="2020-03-30T01:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:Get404@5d5eef3d]" name="setup" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:52Z" finished-at="2020-03-30T01:11:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Get404.searchOrderByID400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="searchOrderByID400(java.lang.String)[pri:0, instance:Get404@5d5eef3d]" name="searchOrderByID400" duration-ms="413" started-at="2020-03-30T01:11:52Z" description="Verify 400 status code for GET method with Invalid ID supplied" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [404]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at Get404.getStatusFotGetResponse(Get404.java:45)
+at Get404.searchOrderByID400(Get404.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOrderByID400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:Get404@5d5eef3d]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:52Z" finished-at="2020-03-30T01:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:Get404@5d5eef3d]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:52Z" finished-at="2020-03-30T01:11:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Get404.searchOrderByID400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="searchOrderByID400(java.lang.String)[pri:0, instance:Get404@5d5eef3d]" name="searchOrderByID400" duration-ms="614" started-at="2020-03-30T01:11:52Z" description="Verify 400 status code for GET method with Invalid ID supplied" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [404]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at Get404.getStatusFotGetResponse(Get404.java:45)
+at Get404.searchOrderByID400(Get404.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOrderByID400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:Get404@5d5eef3d]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:53Z" finished-at="2020-03-30T01:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:Get404@5d5eef3d]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:53Z" finished-at="2020-03-30T01:11:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Get404.searchOrderByID400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="searchOrderByID400(java.lang.String)[pri:0, instance:Get404@5d5eef3d]" name="searchOrderByID400" duration-ms="419" started-at="2020-03-30T01:11:53Z" description="Verify 400 status code for GET method with Invalid ID supplied" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [404]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:652)
+at org.testng.Assert.assertEquals(Assert.java:662)
+at Get404.getStatusFotGetResponse(Get404.java:45)
+at Get404.searchOrderByID400(Get404.java:35)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOrderByID400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:Get404@5d5eef3d]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:53Z" finished-at="2020-03-30T01:11:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:Get404@5d5eef3d]" name="setup" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:53Z" finished-at="2020-03-30T01:11:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void Get404.nonExistingUrlReturns404() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="nonExistingUrlReturns404()[pri:0, instance:Get404@5d5eef3d]" name="nonExistingUrlReturns404" duration-ms="340" started-at="2020-03-30T01:11:53Z" description="Verify 404 status code for GET method for a nonexisting URL" finished-at="2020-03-30T01:11:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nonExistingUrlReturns404 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:Get404@5d5eef3d]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:54Z" finished-at="2020-03-30T01:11:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- Get404 -->
+      <class name="DeleteAndPost">
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:36Z" finished-at="2020-03-30T01:11:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="createInvalidOrder400(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createInvalidOrder400" duration-ms="417" started-at="2020-03-30T01:11:36Z" description="Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id" data-provider="invalidPostJson" finished-at="2020-03-30T01:11:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidOrder400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:37Z" finished-at="2020-03-30T01:11:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:37Z" finished-at="2020-03-30T01:11:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="createInvalidOrder400(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createInvalidOrder400" duration-ms="1004" started-at="2020-03-30T01:11:37Z" description="Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id" data-provider="invalidPostJson" finished-at="2020-03-30T01:11:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidOrder400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:38Z" finished-at="2020-03-30T01:11:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:38Z" finished-at="2020-03-30T01:11:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="createInvalidOrder400(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createInvalidOrder400" duration-ms="500" started-at="2020-03-30T01:11:38Z" description="Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id" data-provider="invalidPostJson" finished-at="2020-03-30T01:11:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidOrder400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:38Z" finished-at="2020-03-30T01:11:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="2" started-at="2020-03-30T01:11:38Z" finished-at="2020-03-30T01:11:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createInvalidOrder400(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createInvalidOrder400" duration-ms="431" started-at="2020-03-30T01:11:38Z" description="Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id" data-provider="invalidPostJson" finished-at="2020-03-30T01:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": ,"petId": ,"quantity": ,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidOrder400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:39Z" finished-at="2020-03-30T01:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="FAIL" signature="createInvalidOrder400(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createInvalidOrder400" duration-ms="439" started-at="2020-03-30T01:11:39Z" description="Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id" data-provider="invalidPostJson" finished-at="2020-03-30T01:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidOrder400 -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:39Z" finished-at="2020-03-30T01:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:39Z" finished-at="2020-03-30T01:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:39Z" finished-at="2020-03-30T01:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="createInvalidOrder400(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createInvalidOrder400" duration-ms="318" started-at="2020-03-30T01:11:39Z" description="Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id" data-provider="invalidPostJson" finished-at="2020-03-30T01:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidOrder400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:39Z" finished-at="2020-03-30T01:11:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:39Z" finished-at="2020-03-30T01:11:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="createInvalidOrder400(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createInvalidOrder400" duration-ms="425" started-at="2020-03-30T01:11:39Z" description="Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id" data-provider="invalidPostJson" finished-at="2020-03-30T01:11:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidOrder400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:40Z" finished-at="2020-03-30T01:11:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:40Z" finished-at="2020-03-30T01:11:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="createInvalidOrder400(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createInvalidOrder400" duration-ms="454" started-at="2020-03-30T01:11:40Z" description="Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id" data-provider="invalidPostJson" finished-at="2020-03-30T01:11:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createInvalidOrder400 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:40Z" finished-at="2020-03-30T01:11:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:40Z" finished-at="2020-03-30T01:11:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createOrder500(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createOrder500(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createOrder500" duration-ms="1090" started-at="2020-03-30T01:11:40Z" description="Verify place an invalid order 500 status code,  CASE_1: Order with wrong date format / CASE_2: Order with incomplete data" data-provider="invalidPostJson2" finished-at="2020-03-30T01:11:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"id": 2,"petId": 1,"quantity": 5,"shipDate": "-03-20T21:39:50.300Z","status": "placed","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrder500 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:41Z" finished-at="2020-03-30T01:11:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:41Z" finished-at="2020-03-30T01:11:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.createOrder500(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="createOrder500(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="createOrder500" duration-ms="387" started-at="2020-03-30T01:11:41Z" description="Verify place an invalid order 500 status code,  CASE_1: Order with wrong date format / CASE_2: Order with incomplete data" data-provider="invalidPostJson2" finished-at="2020-03-30T01:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"petId": 1,"shipDate": "-03-20T21:39:50.300Z","complete": true }]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrder500 -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:42Z" finished-at="2020-03-30T01:11:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:42Z" finished-at="2020-03-30T01:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="deleteInvalidIDSupplied(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="deleteInvalidIDSupplied" duration-ms="371" started-at="2020-03-30T01:11:42Z" description="Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDSupplied -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:42Z" finished-at="2020-03-30T01:11:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:42Z" finished-at="2020-03-30T01:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="SKIP" signature="deleteInvalidIDSupplied(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="deleteInvalidIDSupplied" duration-ms="474" started-at="2020-03-30T01:11:42Z" description="Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDSupplied -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:42Z" finished-at="2020-03-30T01:11:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:42Z" finished-at="2020-03-30T01:11:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDSupplied(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="deleteInvalidIDSupplied" duration-ms="373" started-at="2020-03-30T01:11:42Z" description="Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDSupplied -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="0" started-at="2020-03-30T01:11:43Z" finished-at="2020-03-30T01:11:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:43Z" finished-at="2020-03-30T01:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDSupplied(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="deleteInvalidIDSupplied" duration-ms="433" started-at="2020-03-30T01:11:43Z" description="Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDSupplied -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:43Z" finished-at="2020-03-30T01:11:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:43Z" finished-at="2020-03-30T01:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDSupplied(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="deleteInvalidIDSupplied" duration-ms="389" started-at="2020-03-30T01:11:43Z" description="Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDSupplied -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:44Z" finished-at="2020-03-30T01:11:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:44Z" finished-at="2020-03-30T01:11:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDSupplied(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="deleteInvalidIDSupplied" duration-ms="362" started-at="2020-03-30T01:11:44Z" description="Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDSupplied -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:44Z" finished-at="2020-03-30T01:11:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:44Z" finished-at="2020-03-30T01:11:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDSupplied(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="deleteInvalidIDSupplied" duration-ms="391" started-at="2020-03-30T01:11:44Z" description="Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDSupplied -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:44Z" finished-at="2020-03-30T01:11:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:44Z" finished-at="2020-03-30T01:11:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDSupplied(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="deleteInvalidIDSupplied" duration-ms="429" started-at="2020-03-30T01:11:44Z" description="Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 200]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDSupplied -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:45Z" finished-at="2020-03-30T01:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+        <test-method status="PASS" signature="setup(java.lang.reflect.Method)[pri:0, instance:DeleteAndPost@5dfcfece]" name="setup" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:45Z" finished-at="2020-03-30T01:11:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="deleteInvalidIDSupplied(java.lang.String)[pri:0, instance:DeleteAndPost@5dfcfece]" name="deleteInvalidIDSupplied" duration-ms="358" started-at="2020-03-30T01:11:45Z" description="Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer" data-provider="invalidOrderNumber" finished-at="2020-03-30T01:11:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[11]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Basic criteria failed,was expecting code 400, but got: 404]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:54)
+at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:44)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteInvalidIDSupplied -->
+        <test-method status="PASS" signature="closeResources()[pri:0, instance:DeleteAndPost@5dfcfece]" name="closeResources" is-config="true" duration-ms="1" started-at="2020-03-30T01:11:45Z" finished-at="2020-03-30T01:11:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeResources -->
+      </class> <!-- DeleteAndPost -->
+    </test> <!-- NEGATIVE_TEST -->
+  </suite> <!-- All Tests -->
+</testng-results>

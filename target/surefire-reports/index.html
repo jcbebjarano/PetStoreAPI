@@ -1,0 +1,2674 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 28 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-All_Tests">
+              <span class="suite-name border-failed">All Tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-All_Tests">
+                    <span>api-tests.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-All_Tests">
+                    <span class="test-stats">6 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-All_Tests">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-All_Tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-All_Tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-All_Tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-All_Tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">55 methods, 28 failed,  8 skipped,  19 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-All_Tests" class="hide-methods failed suite-All_Tests"> (hide)</a> <!-- hide-methods failed suite-All_Tests -->
+                      <a href="#" panel-name="suite-All_Tests" class="show-methods failed suite-All_Tests"> (show)</a> <!-- show-methods failed suite-All_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-All_Tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createInvalidOrder400({&quot;id&quot;: 3.5,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;compl...)">createInvalidOrder400({"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createInvalidOrder400({&quot;id&quot;: -12,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;compl...)">createInvalidOrder400({"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createInvalidOrder400({&quot;id&quot;: 3.5,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;compl...)">createInvalidOrder400({"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createInvalidOrder400({&quot;id&quot;: 1,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complet...)">createInvalidOrder400({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createInvalidOrder400({&quot;id&quot;: -12,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;compl...)">createInvalidOrder400({"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteInvalidIDMessageIsCorrect(3.5)">deleteInvalidIDMessageIsCorrect(3.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteInvalidIDMessageIsCorrect(11)">deleteInvalidIDMessageIsCorrect(11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteInvalidIDMessageIsCorrect(-1)">deleteInvalidIDMessageIsCorrect(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteInvalidIDMessageIsCorrect(11)">deleteInvalidIDMessageIsCorrect(11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteInvalidIDMessageIsCorrect(0)">deleteInvalidIDMessageIsCorrect(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteInvalidIDMessageIsCorrect(0)">deleteInvalidIDMessageIsCorrect(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteInvalidIDMessageIsCorrect(3.5)">deleteInvalidIDMessageIsCorrect(3.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteInvalidIDSupplied(-1)">deleteInvalidIDSupplied(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteInvalidIDSupplied(11)">deleteInvalidIDSupplied(11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteInvalidIDSupplied(3.5)">deleteInvalidIDSupplied(3.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteInvalidIDSupplied(0)">deleteInvalidIDSupplied(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteInvalidIDSupplied(11)">deleteInvalidIDSupplied(11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteInvalidIDSupplied(3.5)">deleteInvalidIDSupplied(3.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteInvalidIDSupplied(0)">deleteInvalidIDSupplied(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteNotFoundMessageIsCorrect(1)">deleteNotFoundMessageIsCorrect(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="invalidIDSuppliedMessageIsCorrect(0)">invalidIDSuppliedMessageIsCorrect(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="invalidIDSuppliedMessageIsCorrect(3.5)">invalidIDSuppliedMessageIsCorrect(3.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="invalidIDSuppliedMessageIsCorrect(-1)">invalidIDSuppliedMessageIsCorrect(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="invalidIDSuppliedMessageIsCorrect(11)">invalidIDSuppliedMessageIsCorrect(11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="Get404" hash-for-method="searchOrderByID400(3.5)">searchOrderByID400(3.5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="Get404" hash-for-method="searchOrderByID400(-1)">searchOrderByID400(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="Get404" hash-for-method="searchOrderByID400(11)">searchOrderByID400(11)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="Get404" hash-for-method="searchOrderByID400(0)">searchOrderByID400(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-All_Tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-All_Tests" class="hide-methods skipped suite-All_Tests"> (hide)</a> <!-- hide-methods skipped suite-All_Tests -->
+                      <a href="#" panel-name="suite-All_Tests" class="show-methods skipped suite-All_Tests"> (show)</a> <!-- show-methods skipped suite-All_Tests -->
+                    </span>
+                    <div class="method-list-content skipped suite-All_Tests">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createInvalidOrder400({&quot;id&quot;: 1,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complet...)">createInvalidOrder400({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createInvalidOrder400({&quot;id&quot;: 1,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complet...)">createInvalidOrder400({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteInvalidIDMessageIsCorrect(-1)">deleteInvalidIDMessageIsCorrect(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteInvalidIDMessageIsCorrect(-1)">deleteInvalidIDMessageIsCorrect(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteInvalidIDSupplied(-1)">deleteInvalidIDSupplied(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteInvalidIDSupplied(-1)">deleteInvalidIDSupplied(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteNotFoundMessageIsCorrect(1)">deleteNotFoundMessageIsCorrect(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="deleteNotFoundMessageIsCorrect(1)">deleteNotFoundMessageIsCorrect(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-All_Tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-All_Tests" class="hide-methods passed suite-All_Tests"> (hide)</a> <!-- hide-methods passed suite-All_Tests -->
+                      <a href="#" panel-name="suite-All_Tests" class="show-methods passed suite-All_Tests"> (show)</a> <!-- show-methods passed suite-All_Tests -->
+                    </span>
+                    <div class="method-list-content passed suite-All_Tests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="ResponseHeaders" hash-for-method="contentTypeIsJson(/inventory)">contentTypeIsJson(/inventory)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="ResponseHeaders" hash-for-method="contentTypeIsJson(/order/1)">contentTypeIsJson(/order/1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createInvalidOrder400({&quot;id&quot;: ,&quot;petId&quot;: ,&quot;quantity&quot;: ,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complete&quot;:...)">createInvalidOrder400({"id": ,"petId": ,"quantity": ,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete":...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createOrder200({&quot;id&quot;: 1,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complet...)">createOrder200({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createOrder500({&quot;id&quot;: 2,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complete&quot;: ...)">createOrder500({"id": 2,"petId": 1,"quantity": 5,"shipDate": "-03-20T21:39:50.300Z","status": "placed","complete": ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="createOrder500({&quot;petId&quot;: 1,&quot;shipDate&quot;: &quot;-03-20T21:39:50.300Z&quot;,&quot;complete&quot;: true })">createOrder500({"petId": 1,"shipDate": "-03-20T21:39:50.300Z","complete": true })</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="ResponseHeaders" hash-for-method="dateIsPresent(/order/1)">dateIsPresent(/order/1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="ResponseHeaders" hash-for-method="dateIsPresent(/inventory)">dateIsPresent(/inventory)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteIsSuccessful(1)">deleteIsSuccessful(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="DeleteAndPost" hash-for-method="deleteOrderNotFound(1)">deleteOrderNotFound(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="Get200" hash-for-method="inventoryReturns200">inventoryReturns200</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="Get404" hash-for-method="nonExistingUrlReturns404">nonExistingUrlReturns404</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="notFoundMessageIsCorrect(1)">notFoundMessageIsCorrect(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="Options204" hash-for-method="optionsReturnsCorrectMethodsList">optionsReturnsCorrectMethodsList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="BodyTest" hash-for-method="returnsCorrectOrderBodyResponse(1)">returnsCorrectOrderBodyResponse(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="Get200" hash-for-method="searchOrderByID200(1)">searchOrderByID200(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="Get404" hash-for-method="searchOrderByID404(1)">searchOrderByID404(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="ResponseHeaders" hash-for-method="serverIsJetty(/order/1)">serverIsJetty(/order/1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-All_Tests" title="ResponseHeaders" hash-for-method="serverIsJetty(/inventory)">serverIsJetty(/inventory)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-All_Tests" class="panel All_Tests">
+          <div class="suite-All_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">DeleteAndPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidOrder400({&quot;id&quot;: 3.5,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;compl...)">
+                  </a> <!-- createInvalidOrder400({"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...) -->
+                  <span class="method-name">createInvalidOrder400</span>
+                  <span class="parameters">({"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidOrder400({&quot;id&quot;: -12,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;compl...)">
+                  </a> <!-- createInvalidOrder400({"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...) -->
+                  <span class="method-name">createInvalidOrder400</span>
+                  <span class="parameters">({"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidOrder400({&quot;id&quot;: 3.5,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;compl...)">
+                  </a> <!-- createInvalidOrder400({"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...) -->
+                  <span class="method-name">createInvalidOrder400</span>
+                  <span class="parameters">({"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidOrder400({&quot;id&quot;: 1,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complet...)">
+                  </a> <!-- createInvalidOrder400({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...) -->
+                  <span class="method-name">createInvalidOrder400</span>
+                  <span class="parameters">({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidOrder400({&quot;id&quot;: -12,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;compl...)">
+                  </a> <!-- createInvalidOrder400({"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...) -->
+                  <span class="method-name">createInvalidOrder400</span>
+                  <span class="parameters">({"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDSupplied(-1)">
+                  </a> <!-- deleteInvalidIDSupplied(-1) -->
+                  <span class="method-name">deleteInvalidIDSupplied</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDSupplied(11)">
+                  </a> <!-- deleteInvalidIDSupplied(11) -->
+                  <span class="method-name">deleteInvalidIDSupplied</span>
+                  <span class="parameters">(11)</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDSupplied(3.5)">
+                  </a> <!-- deleteInvalidIDSupplied(3.5) -->
+                  <span class="method-name">deleteInvalidIDSupplied</span>
+                  <span class="parameters">(3.5)</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDSupplied(0)">
+                  </a> <!-- deleteInvalidIDSupplied(0) -->
+                  <span class="method-name">deleteInvalidIDSupplied</span>
+                  <span class="parameters">(0)</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDSupplied(11)">
+                  </a> <!-- deleteInvalidIDSupplied(11) -->
+                  <span class="method-name">deleteInvalidIDSupplied</span>
+                  <span class="parameters">(11)</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDSupplied(3.5)">
+                  </a> <!-- deleteInvalidIDSupplied(3.5) -->
+                  <span class="method-name">deleteInvalidIDSupplied</span>
+                  <span class="parameters">(3.5)</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDSupplied(0)">
+                  </a> <!-- deleteInvalidIDSupplied(0) -->
+                  <span class="method-name">deleteInvalidIDSupplied</span>
+                  <span class="parameters">(0)</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-failed -->
+          <div class="suite-All_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Get404</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchOrderByID400(3.5)">
+                  </a> <!-- searchOrderByID400(3.5) -->
+                  <span class="method-name">searchOrderByID400</span>
+                  <span class="parameters">(3.5)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify 400 status code for GET method with Invalid ID supplied)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchOrderByID400(-1)">
+                  </a> <!-- searchOrderByID400(-1) -->
+                  <span class="method-name">searchOrderByID400</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify 400 status code for GET method with Invalid ID supplied)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchOrderByID400(11)">
+                  </a> <!-- searchOrderByID400(11) -->
+                  <span class="method-name">searchOrderByID400</span>
+                  <span class="parameters">(11)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify 400 status code for GET method with Invalid ID supplied)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchOrderByID400(0)">
+                  </a> <!-- searchOrderByID400(0) -->
+                  <span class="method-name">searchOrderByID400</span>
+                  <span class="parameters">(0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify 400 status code for GET method with Invalid ID supplied)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-failed -->
+          <div class="suite-All_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">BodyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDMessageIsCorrect(3.5)">
+                  </a> <!-- deleteInvalidIDMessageIsCorrect(3.5) -->
+                  <span class="method-name">deleteInvalidIDMessageIsCorrect</span>
+                  <span class="parameters">(3.5)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: &quot;3.5&quot;]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate invalid ID supplied message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDMessageIsCorrect(11)">
+                  </a> <!-- deleteInvalidIDMessageIsCorrect(11) -->
+                  <span class="method-name">deleteInvalidIDMessageIsCorrect</span>
+                  <span class="parameters">(11)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate invalid ID supplied message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDMessageIsCorrect(-1)">
+                  </a> <!-- deleteInvalidIDMessageIsCorrect(-1) -->
+                  <span class="method-name">deleteInvalidIDMessageIsCorrect</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate invalid ID supplied message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDMessageIsCorrect(11)">
+                  </a> <!-- deleteInvalidIDMessageIsCorrect(11) -->
+                  <span class="method-name">deleteInvalidIDMessageIsCorrect</span>
+                  <span class="parameters">(11)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate invalid ID supplied message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDMessageIsCorrect(0)">
+                  </a> <!-- deleteInvalidIDMessageIsCorrect(0) -->
+                  <span class="method-name">deleteInvalidIDMessageIsCorrect</span>
+                  <span class="parameters">(0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate invalid ID supplied message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDMessageIsCorrect(0)">
+                  </a> <!-- deleteInvalidIDMessageIsCorrect(0) -->
+                  <span class="method-name">deleteInvalidIDMessageIsCorrect</span>
+                  <span class="parameters">(0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate invalid ID supplied message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDMessageIsCorrect(3.5)">
+                  </a> <!-- deleteInvalidIDMessageIsCorrect(3.5) -->
+                  <span class="method-name">deleteInvalidIDMessageIsCorrect</span>
+                  <span class="parameters">(3.5)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: &quot;3.5&quot;]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate invalid ID supplied message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteNotFoundMessageIsCorrect(1)">
+                  </a> <!-- deleteNotFoundMessageIsCorrect(1) -->
+                  <span class="method-name">deleteNotFoundMessageIsCorrect</span>
+                  <span class="parameters">(1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown]
+	at BodyTest.deleteNotFoundMessageIsCorrect(BodyTest.java:86)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate not found message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidIDSuppliedMessageIsCorrect(0)">
+                  </a> <!-- invalidIDSuppliedMessageIsCorrect(0) -->
+                  <span class="method-name">invalidIDSuppliedMessageIsCorrect</span>
+                  <span class="parameters">(0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Invalid ID supplied] but found [Order not found]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate Invalid ID supplied message in GET order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidIDSuppliedMessageIsCorrect(3.5)">
+                  </a> <!-- invalidIDSuppliedMessageIsCorrect(3.5) -->
+                  <span class="method-name">invalidIDSuppliedMessageIsCorrect</span>
+                  <span class="parameters">(3.5)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: &quot;3.5&quot;]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate Invalid ID supplied message in GET order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidIDSuppliedMessageIsCorrect(-1)">
+                  </a> <!-- invalidIDSuppliedMessageIsCorrect(-1) -->
+                  <span class="method-name">invalidIDSuppliedMessageIsCorrect</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Invalid ID supplied] but found [Order not found]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate Invalid ID supplied message in GET order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidIDSuppliedMessageIsCorrect(11)">
+                  </a> <!-- invalidIDSuppliedMessageIsCorrect(11) -->
+                  <span class="method-name">invalidIDSuppliedMessageIsCorrect</span>
+                  <span class="parameters">(11)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [Invalid ID supplied] but found [Order not found]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate Invalid ID supplied message in GET order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-failed -->
+          <div class="suite-All_Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">DeleteAndPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidOrder400({&quot;id&quot;: 1,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complet...)">
+                  </a> <!-- createInvalidOrder400({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...) -->
+                  <span class="method-name">createInvalidOrder400</span>
+                  <span class="parameters">({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidOrder400({&quot;id&quot;: 1,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complet...)">
+                  </a> <!-- createInvalidOrder400({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...) -->
+                  <span class="method-name">createInvalidOrder400</span>
+                  <span class="parameters">({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDSupplied(-1)">
+                  </a> <!-- deleteInvalidIDSupplied(-1) -->
+                  <span class="method-name">deleteInvalidIDSupplied</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDSupplied(-1)">
+                  </a> <!-- deleteInvalidIDSupplied(-1) -->
+                  <span class="method-name">deleteInvalidIDSupplied</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 7 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-skipped -->
+          <div class="suite-All_Tests-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">BodyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDMessageIsCorrect(-1)">
+                  </a> <!-- deleteInvalidIDMessageIsCorrect(-1) -->
+                  <span class="method-name">deleteInvalidIDMessageIsCorrect</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate invalid ID supplied message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteInvalidIDMessageIsCorrect(-1)">
+                  </a> <!-- deleteInvalidIDMessageIsCorrect(-1) -->
+                  <span class="method-name">deleteInvalidIDMessageIsCorrect</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate invalid ID supplied message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteNotFoundMessageIsCorrect(1)">
+                  </a> <!-- deleteNotFoundMessageIsCorrect(1) -->
+                  <span class="method-name">deleteNotFoundMessageIsCorrect</span>
+                  <span class="parameters">(1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown]
+	at BodyTest.deleteNotFoundMessageIsCorrect(BodyTest.java:86)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate not found message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteNotFoundMessageIsCorrect(1)">
+                  </a> <!-- deleteNotFoundMessageIsCorrect(1) -->
+                  <span class="method-name">deleteNotFoundMessageIsCorrect</span>
+                  <span class="parameters">(1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [error] but found [unknown]
+	at BodyTest.deleteNotFoundMessageIsCorrect(BodyTest.java:86)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate not found message in DELETE order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-skipped -->
+          <div class="suite-All_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DeleteAndPost</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createInvalidOrder400({&quot;id&quot;: ,&quot;petId&quot;: ,&quot;quantity&quot;: ,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complete&quot;:...)">
+                  </a> <!-- createInvalidOrder400({"id": ,"petId": ,"quantity": ,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete":...) -->
+                  <span class="method-name">createInvalidOrder400</span>
+                  <span class="parameters">({"id": ,"petId": ,"quantity": ,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <em>
+(Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrder200({&quot;id&quot;: 1,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;2020-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complet...)">
+                  </a> <!-- createOrder200({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...) -->
+                  <span class="method-name">createOrder200</span>
+                  <span class="parameters">({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <em>
+(Verify place an order for a pet 200 status code by POST method)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrder500({&quot;id&quot;: 2,&quot;petId&quot;: 1,&quot;quantity&quot;: 5,&quot;shipDate&quot;: &quot;-03-20T21:39:50.300Z&quot;,&quot;status&quot;: &quot;placed&quot;,&quot;complete&quot;: ...)">
+                  </a> <!-- createOrder500({"id": 2,"petId": 1,"quantity": 5,"shipDate": "-03-20T21:39:50.300Z","status": "placed","complete": ...) -->
+                  <span class="method-name">createOrder500</span>
+                  <span class="parameters">({"id": 2,"petId": 1,"quantity": 5,"shipDate": "-03-20T21:39:50.300Z","status": "placed","complete": true })</span>
+                  <em>
+(Verify place an invalid order 500 status code,  CASE_1: Order with wrong date format / CASE_2: Order with incomplete data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createOrder500({&quot;petId&quot;: 1,&quot;shipDate&quot;: &quot;-03-20T21:39:50.300Z&quot;,&quot;complete&quot;: true })">
+                  </a> <!-- createOrder500({"petId": 1,"shipDate": "-03-20T21:39:50.300Z","complete": true }) -->
+                  <span class="method-name">createOrder500</span>
+                  <span class="parameters">({"petId": 1,"shipDate": "-03-20T21:39:50.300Z","complete": true })</span>
+                  <em>
+(Verify place an invalid order 500 status code,  CASE_1: Order with wrong date format / CASE_2: Order with incomplete data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteIsSuccessful(1)">
+                  </a> <!-- deleteIsSuccessful(1) -->
+                  <span class="method-name">deleteIsSuccessful</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(Verify delete an order 200 status code by DELETE method)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteOrderNotFound(1)">
+                  </a> <!-- deleteOrderNotFound(1) -->
+                  <span class="method-name">deleteOrderNotFound</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(Verify delete an order 404 status code when the order not found)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-passed -->
+          <div class="suite-All_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Get404</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="nonExistingUrlReturns404">
+                  </a> <!-- nonExistingUrlReturns404 -->
+                  <span class="method-name">nonExistingUrlReturns404</span>
+                  <em>
+(Verify 404 status code for GET method for a nonexisting URL)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchOrderByID404(1)">
+                  </a> <!-- searchOrderByID404(1) -->
+                  <span class="method-name">searchOrderByID404</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(Verify 404 status code for GET method for order not found)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-passed -->
+          <div class="suite-All_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BodyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="notFoundMessageIsCorrect(1)">
+                  </a> <!-- notFoundMessageIsCorrect(1) -->
+                  <span class="method-name">notFoundMessageIsCorrect</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(Validate not found message in GET order responde body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="returnsCorrectOrderBodyResponse(1)">
+                  </a> <!-- returnsCorrectOrderBodyResponse(1) -->
+                  <span class="method-name">returnsCorrectOrderBodyResponse</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(Validate response body values)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-passed -->
+          <div class="suite-All_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ResponseHeaders</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contentTypeIsJson(/inventory)">
+                  </a> <!-- contentTypeIsJson(/inventory) -->
+                  <span class="method-name">contentTypeIsJson</span>
+                  <span class="parameters">(/inventory)</span>
+                  <em>
+(Validate response header content type is Json)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contentTypeIsJson(/order/1)">
+                  </a> <!-- contentTypeIsJson(/order/1) -->
+                  <span class="method-name">contentTypeIsJson</span>
+                  <span class="parameters">(/order/1)</span>
+                  <em>
+(Validate response header content type is Json)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dateIsPresent(/order/1)">
+                  </a> <!-- dateIsPresent(/order/1) -->
+                  <span class="method-name">dateIsPresent</span>
+                  <span class="parameters">(/order/1)</span>
+                  <em>
+(Validate response header date field is present)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dateIsPresent(/inventory)">
+                  </a> <!-- dateIsPresent(/inventory) -->
+                  <span class="method-name">dateIsPresent</span>
+                  <span class="parameters">(/inventory)</span>
+                  <em>
+(Validate response header date field is present)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="serverIsJetty(/order/1)">
+                  </a> <!-- serverIsJetty(/order/1) -->
+                  <span class="method-name">serverIsJetty</span>
+                  <span class="parameters">(/order/1)</span>
+                  <em>
+(Validate response header server is Jetty)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="serverIsJetty(/inventory)">
+                  </a> <!-- serverIsJetty(/inventory) -->
+                  <span class="method-name">serverIsJetty</span>
+                  <span class="parameters">(/inventory)</span>
+                  <em>
+(Validate response header server is Jetty)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-passed -->
+          <div class="suite-All_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Get200</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inventoryReturns200">
+                  </a> <!-- inventoryReturns200 -->
+                  <span class="method-name">inventoryReturns200</span>
+                  <em>
+(Verify inventory web service returns 200 status code)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchOrderByID200(1)">
+                  </a> <!-- searchOrderByID200(1) -->
+                  <span class="method-name">searchOrderByID200</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(Verify 200 status code for GET method in order to find purchase order by ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-passed -->
+          <div class="suite-All_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Options204</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="optionsReturnsCorrectMethodsList">
+                  </a> <!-- optionsReturnsCorrectMethodsList -->
+                  <span class="method-name">optionsReturnsCorrectMethodsList</span>
+                  <em>
+(Function to test only the response header content.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Tests-class-passed -->
+        </div> <!-- panel All_Tests -->
+        <div panel-name="test-xml-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/camilobejarano/Documents/PETSTORE/module6/src/test/resources/api-tests.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;All Tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestStatus&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;POST_200&quot;&gt;
+    &lt;groups&gt;
+      &lt;define name=&quot;POST&quot;&gt;
+        &lt;include name=&quot;POST&quot;/&gt;
+      &lt;/define&gt; &lt;!-- POST --&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DeleteAndPost&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;createOrder200&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- DeleteAndPost --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- POST_200 --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;GET_200&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Get200&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;inventoryReturns200&quot;/&gt;
+          &lt;include name=&quot;searchOrderByID200&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Get200 --&gt;
+      &lt;class name=&quot;BodyTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;returnsCorrectOrderBodyResponse&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- BodyTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET_200 --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;DELETE_200&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DeleteAndPost&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;deleteIsSuccessful&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- DeleteAndPost --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DELETE_200 --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;GET_404&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Get404&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;searchOrderByID404&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Get404 --&gt;
+      &lt;class name=&quot;DeleteAndPost&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;deleteOrderNotFound&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- DeleteAndPost --&gt;
+      &lt;class name=&quot;BodyTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;notFoundMessageIsCorrect&quot;/&gt;
+          &lt;include name=&quot;deleteNotFoundMessageIsCorrect&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- BodyTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- GET_404 --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;RESPONSE_HEADERS&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Options204&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;optionsReturnsCorrectMethodsList&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Options204 --&gt;
+      &lt;class name=&quot;ResponseHeaders&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;contentTypeIsJson&quot;/&gt;
+          &lt;include name=&quot;serverIsJetty&quot;/&gt;
+          &lt;include name=&quot;dateIsPresent&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- ResponseHeaders --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RESPONSE_HEADERS --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;NEGATIVE_TEST&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;DeleteAndPost&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;createInvalidOrder400&quot;/&gt;
+          &lt;include name=&quot;createOrder500&quot;/&gt;
+          &lt;include name=&quot;deleteInvalidIDSupplied&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- DeleteAndPost --&gt;
+      &lt;class name=&quot;BodyTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;invalidIDSuppliedMessageIsCorrect&quot;/&gt;
+          &lt;include name=&quot;deleteInvalidIDMessageIsCorrect&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- BodyTest --&gt;
+      &lt;class name=&quot;Get404&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;searchOrderByID400&quot;/&gt;
+          &lt;include name=&quot;nonExistingUrlReturns404&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Get404 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NEGATIVE_TEST --&gt;
+&lt;/suite&gt; &lt;!-- All Tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for All Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">POST_200 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GET_200 (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">DELETE_200 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">GET_404 (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">RESPONSE_HEADERS (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">NEGATIVE_TEST (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for All Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">DELETE</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteIsSuccessful</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">POST</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">createOrder200</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for All Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_All_Tests');
+function tableData_All_Tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(55);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'contentTypeIsJson')
+data.setCell(0, 2, 'ResponseHeaders')
+data.setCell(0, 3, 1531);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createOrder500')
+data.setCell(1, 2, 'DeleteAndPost')
+data.setCell(1, 3, 1090);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createInvalidOrder400')
+data.setCell(2, 2, 'DeleteAndPost')
+data.setCell(2, 3, 1004);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'invalidIDSuppliedMessageIsCorrect')
+data.setCell(3, 2, 'BodyTest')
+data.setCell(3, 3, 954);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createOrder200')
+data.setCell(4, 2, 'DeleteAndPost')
+data.setCell(4, 3, 766);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'searchOrderByID404')
+data.setCell(5, 2, 'Get404')
+data.setCell(5, 3, 700);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'searchOrderByID400')
+data.setCell(6, 2, 'Get404')
+data.setCell(6, 3, 614);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'returnsCorrectOrderBodyResponse')
+data.setCell(7, 2, 'BodyTest')
+data.setCell(7, 3, 577);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'deleteInvalidIDMessageIsCorrect')
+data.setCell(8, 2, 'BodyTest')
+data.setCell(8, 3, 532);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'createInvalidOrder400')
+data.setCell(9, 2, 'DeleteAndPost')
+data.setCell(9, 3, 500);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'invalidIDSuppliedMessageIsCorrect')
+data.setCell(10, 2, 'BodyTest')
+data.setCell(10, 3, 496);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'deleteInvalidIDSupplied')
+data.setCell(11, 2, 'DeleteAndPost')
+data.setCell(11, 3, 474);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'deleteNotFoundMessageIsCorrect')
+data.setCell(12, 2, 'BodyTest')
+data.setCell(12, 3, 472);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'serverIsJetty')
+data.setCell(13, 2, 'ResponseHeaders')
+data.setCell(13, 3, 457);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'createInvalidOrder400')
+data.setCell(14, 2, 'DeleteAndPost')
+data.setCell(14, 3, 454);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'deleteInvalidIDMessageIsCorrect')
+data.setCell(15, 2, 'BodyTest')
+data.setCell(15, 3, 454);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'searchOrderByID400')
+data.setCell(16, 2, 'Get404')
+data.setCell(16, 3, 451);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'deleteInvalidIDMessageIsCorrect')
+data.setCell(17, 2, 'BodyTest')
+data.setCell(17, 3, 450);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'deleteInvalidIDMessageIsCorrect')
+data.setCell(18, 2, 'BodyTest')
+data.setCell(18, 3, 448);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'createInvalidOrder400')
+data.setCell(19, 2, 'DeleteAndPost')
+data.setCell(19, 3, 439);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'deleteInvalidIDMessageIsCorrect')
+data.setCell(20, 2, 'BodyTest')
+data.setCell(20, 3, 438);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'deleteInvalidIDSupplied')
+data.setCell(21, 2, 'DeleteAndPost')
+data.setCell(21, 3, 433);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'createInvalidOrder400')
+data.setCell(22, 2, 'DeleteAndPost')
+data.setCell(22, 3, 431);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'dateIsPresent')
+data.setCell(23, 2, 'ResponseHeaders')
+data.setCell(23, 3, 429);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'deleteInvalidIDSupplied')
+data.setCell(24, 2, 'DeleteAndPost')
+data.setCell(24, 3, 429);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'createInvalidOrder400')
+data.setCell(25, 2, 'DeleteAndPost')
+data.setCell(25, 3, 425);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'dateIsPresent')
+data.setCell(26, 2, 'ResponseHeaders')
+data.setCell(26, 3, 424);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'searchOrderByID400')
+data.setCell(27, 2, 'Get404')
+data.setCell(27, 3, 419);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'createInvalidOrder400')
+data.setCell(28, 2, 'DeleteAndPost')
+data.setCell(28, 3, 417);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'searchOrderByID400')
+data.setCell(29, 2, 'Get404')
+data.setCell(29, 3, 413);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'deleteInvalidIDMessageIsCorrect')
+data.setCell(30, 2, 'BodyTest')
+data.setCell(30, 3, 410);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'optionsReturnsCorrectMethodsList')
+data.setCell(31, 2, 'Options204')
+data.setCell(31, 3, 407);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'deleteInvalidIDMessageIsCorrect')
+data.setCell(32, 2, 'BodyTest')
+data.setCell(32, 3, 407);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'serverIsJetty')
+data.setCell(33, 2, 'ResponseHeaders')
+data.setCell(33, 3, 405);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'deleteInvalidIDSupplied')
+data.setCell(34, 2, 'DeleteAndPost')
+data.setCell(34, 3, 391);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'deleteOrderNotFound')
+data.setCell(35, 2, 'DeleteAndPost')
+data.setCell(35, 3, 389);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'deleteInvalidIDSupplied')
+data.setCell(36, 2, 'DeleteAndPost')
+data.setCell(36, 3, 389);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'createOrder500')
+data.setCell(37, 2, 'DeleteAndPost')
+data.setCell(37, 3, 387);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'deleteInvalidIDMessageIsCorrect')
+data.setCell(38, 2, 'BodyTest')
+data.setCell(38, 3, 383);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'notFoundMessageIsCorrect')
+data.setCell(39, 2, 'BodyTest')
+data.setCell(39, 3, 381);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'deleteIsSuccessful')
+data.setCell(40, 2, 'DeleteAndPost')
+data.setCell(40, 3, 379);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'deleteNotFoundMessageIsCorrect')
+data.setCell(41, 2, 'BodyTest')
+data.setCell(41, 3, 379);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'invalidIDSuppliedMessageIsCorrect')
+data.setCell(42, 2, 'BodyTest')
+data.setCell(42, 3, 379);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'deleteInvalidIDSupplied')
+data.setCell(43, 2, 'DeleteAndPost')
+data.setCell(43, 3, 373);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'deleteInvalidIDSupplied')
+data.setCell(44, 2, 'DeleteAndPost')
+data.setCell(44, 3, 371);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'deleteNotFoundMessageIsCorrect')
+data.setCell(45, 2, 'BodyTest')
+data.setCell(45, 3, 369);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'searchOrderByID200')
+data.setCell(46, 2, 'Get200')
+data.setCell(46, 3, 366);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'invalidIDSuppliedMessageIsCorrect')
+data.setCell(47, 2, 'BodyTest')
+data.setCell(47, 3, 365);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'deleteInvalidIDSupplied')
+data.setCell(48, 2, 'DeleteAndPost')
+data.setCell(48, 3, 362);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'deleteInvalidIDSupplied')
+data.setCell(49, 2, 'DeleteAndPost')
+data.setCell(49, 3, 358);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'deleteInvalidIDMessageIsCorrect')
+data.setCell(50, 2, 'BodyTest')
+data.setCell(50, 3, 355);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'inventoryReturns200')
+data.setCell(51, 2, 'Get200')
+data.setCell(51, 3, 351);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'contentTypeIsJson')
+data.setCell(52, 2, 'ResponseHeaders')
+data.setCell(52, 3, 345);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'nonExistingUrlReturns404')
+data.setCell(53, 2, 'Get404')
+data.setCell(53, 3, 340);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'createInvalidOrder400')
+data.setCell(54, 2, 'DeleteAndPost')
+data.setCell(54, 3, 318);
+window.suiteTableData['All_Tests']= { tableData: data, tableDiv: 'times-div-All_Tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <div id="times-div-All_Tests">
+              </div> <!-- times-div-All_Tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for All Tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">31 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">DeleteAndPost</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">createOrder200</span>
+                <br/>
+                <span class="ignored-method-name">createOrder200</span>
+                <br/>
+                <span class="ignored-method-name">createOrder200</span>
+                <br/>
+                <span class="ignored-method-name">deleteIsSuccessful</span>
+                <br/>
+                <span class="ignored-method-name">deleteIsSuccessful</span>
+                <br/>
+                <span class="ignored-method-name">deleteIsSuccessful</span>
+                <br/>
+                <span class="ignored-method-name">deleteInvalidIDSupplied</span>
+                <br/>
+                <span class="ignored-method-name">deleteInvalidIDSupplied</span>
+                <br/>
+                <span class="ignored-method-name">deleteInvalidIDSupplied</span>
+                <br/>
+                <span class="ignored-method-name">createInvalidOrder400</span>
+                <br/>
+                <span class="ignored-method-name">createInvalidOrder400</span>
+                <br/>
+                <span class="ignored-method-name">createInvalidOrder400</span>
+                <br/>
+                <span class="ignored-method-name">createOrder500</span>
+                <br/>
+                <span class="ignored-method-name">createOrder500</span>
+                <br/>
+                <span class="ignored-method-name">createOrder500</span>
+                <br/>
+                <span class="ignored-method-name">deleteOrderNotFound</span>
+                <br/>
+                <span class="ignored-method-name">deleteOrderNotFound</span>
+                <br/>
+                <span class="ignored-method-name">deleteOrderNotFound</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Get404</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">searchOrderByID400</span>
+                <br/>
+                <span class="ignored-method-name">nonExistingUrlReturns404</span>
+                <br/>
+                <span class="ignored-method-name">searchOrderByID404</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">BodyTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">notFoundMessageIsCorrect</span>
+                <br/>
+                <span class="ignored-method-name">notFoundMessageIsCorrect</span>
+                <br/>
+                <span class="ignored-method-name">returnsCorrectOrderBodyResponse</span>
+                <br/>
+                <span class="ignored-method-name">returnsCorrectOrderBodyResponse</span>
+                <br/>
+                <span class="ignored-method-name">invalidIDSuppliedMessageIsCorrect</span>
+                <br/>
+                <span class="ignored-method-name">invalidIDSuppliedMessageIsCorrect</span>
+                <br/>
+                <span class="ignored-method-name">deleteInvalidIDMessageIsCorrect</span>
+                <br/>
+                <span class="ignored-method-name">deleteInvalidIDMessageIsCorrect</span>
+                <br/>
+                <span class="ignored-method-name">deleteNotFoundMessageIsCorrect</span>
+                <br/>
+                <span class="ignored-method-name">deleteNotFoundMessageIsCorrect</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-All_Tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">DeleteAndPost</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createOrder200(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrder200({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...)</span>
+                <span class="method-start">249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">1016 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Get200</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void Get200.inventoryReturns200() throws java.io.IOException)</span>
+                <span class="method-start">6046 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">inventoryReturns200</span>
+                <span class="method-start">6047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">6399 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void Get200.searchOrderByID200(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">6401 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchOrderByID200(1)</span>
+                <span class="method-start">6403 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">6770 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BodyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.returnsCorrectOrderBodyResponse(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">6771 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">returnsCorrectOrderBodyResponse(1)</span>
+                <span class="method-start">6773 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">7350 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DeleteAndPost</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteIsSuccessful(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">12357 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteIsSuccessful(1)</span>
+                <span class="method-start">12358 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">12737 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Get404</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void Get404.searchOrderByID404(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">17749 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchOrderByID404(1)</span>
+                <span class="method-start">17750 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">18451 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DeleteAndPost</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteOrderNotFound(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">18452 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteOrderNotFound(1)</span>
+                <span class="method-start">18454 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">18843 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BodyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.notFoundMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">18845 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">notFoundMessageIsCorrect(1)</span>
+                <span class="method-start">18846 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">19227 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteNotFoundMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">19227 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteNotFoundMessageIsCorrect(1)</span>
+                <span class="method-start">19228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">19700 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteNotFoundMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">19701 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteNotFoundMessageIsCorrect(1)</span>
+                <span class="method-start">19702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">20072 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteNotFoundMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">20072 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteNotFoundMessageIsCorrect(1)</span>
+                <span class="method-start">20074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">20459 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ResponseHeaders</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void ResponseHeaders.contentTypeIsJson(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">25473 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contentTypeIsJson(/inventory)</span>
+                <span class="method-start">25474 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">25819 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void ResponseHeaders.contentTypeIsJson(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">25820 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contentTypeIsJson(/order/1)</span>
+                <span class="method-start">25822 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">27353 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void ResponseHeaders.serverIsJetty(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">27354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">serverIsJetty(/inventory)</span>
+                <span class="method-start">27356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">27761 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void ResponseHeaders.serverIsJetty(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">27762 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">serverIsJetty(/order/1)</span>
+                <span class="method-start">27763 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">28220 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void ResponseHeaders.dateIsPresent(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">28221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dateIsPresent(/inventory)</span>
+                <span class="method-start">28223 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">28648 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void ResponseHeaders.dateIsPresent(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">28648 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dateIsPresent(/order/1)</span>
+                <span class="method-start">28649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">29079 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Options204</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void Options204.optionsReturnsCorrectMethodsList() throws java.io.IOException)</span>
+                <span class="method-start">29080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">optionsReturnsCorrectMethodsList</span>
+                <span class="method-start">29081 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">29488 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DeleteAndPost</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">34493 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createInvalidOrder400({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...)</span>
+                <span class="method-start">34494 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">34911 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">34912 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createInvalidOrder400({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...)</span>
+                <span class="method-start">34913 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">35918 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">35920 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createInvalidOrder400({"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complet...)</span>
+                <span class="method-start">35921 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">36422 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">36423 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createInvalidOrder400({"id": ,"petId": ,"quantity": ,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete":...)</span>
+                <span class="method-start">36425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">36857 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">36858 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createInvalidOrder400({"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...)</span>
+                <span class="method-start">36858 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">37298 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">37299 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createInvalidOrder400({"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...)</span>
+                <span class="method-start">37300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">37619 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">37620 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createInvalidOrder400({"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...)</span>
+                <span class="method-start">37621 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">38047 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createInvalidOrder400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">38048 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createInvalidOrder400({"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","compl...)</span>
+                <span class="method-start">38049 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">38504 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createOrder500(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">38505 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrder500({"id": 2,"petId": 1,"quantity": 5,"shipDate": "-03-20T21:39:50.300Z","status": "placed","complete": ...)</span>
+                <span class="method-start">38506 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">39596 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.createOrder500(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">39597 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createOrder500({"petId": 1,"shipDate": "-03-20T21:39:50.300Z","complete": true })</span>
+                <span class="method-start">39598 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">39986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">39987 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteInvalidIDSupplied(-1)</span>
+                <span class="method-start">39988 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">40360 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">40361 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteInvalidIDSupplied(-1)</span>
+                <span class="method-start">40362 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">40836 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">40838 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDSupplied(-1)</span>
+                <span class="method-start">40839 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">41213 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">41213 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDSupplied(0)</span>
+                <span class="method-start">41214 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">41648 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">41649 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDSupplied(0)</span>
+                <span class="method-start">41650 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">42039 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">42040 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDSupplied(3.5)</span>
+                <span class="method-start">42041 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">42403 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">42404 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDSupplied(3.5)</span>
+                <span class="method-start">42405 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">42796 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">42797 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDSupplied(11)</span>
+                <span class="method-start">42798 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">43228 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void DeleteAndPost.deleteInvalidIDSupplied(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">43229 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDSupplied(11)</span>
+                <span class="method-start">43230 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">43588 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BodyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.invalidIDSuppliedMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">43590 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidIDSuppliedMessageIsCorrect(-1)</span>
+                <span class="method-start">43591 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">44546 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.invalidIDSuppliedMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">44546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidIDSuppliedMessageIsCorrect(0)</span>
+                <span class="method-start">44547 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">45044 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.invalidIDSuppliedMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">45044 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidIDSuppliedMessageIsCorrect(3.5)</span>
+                <span class="method-start">45045 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">45424 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.invalidIDSuppliedMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">45425 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidIDSuppliedMessageIsCorrect(11)</span>
+                <span class="method-start">45425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">45791 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">45791 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteInvalidIDMessageIsCorrect(-1)</span>
+                <span class="method-start">45792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">46240 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">46240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteInvalidIDMessageIsCorrect(-1)</span>
+                <span class="method-start">46241 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">46596 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">46596 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDMessageIsCorrect(-1)</span>
+                <span class="method-start">46597 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">47130 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">47130 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDMessageIsCorrect(0)</span>
+                <span class="method-start">47131 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">47539 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">47539 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDMessageIsCorrect(0)</span>
+                <span class="method-start">47540 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">47994 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">47995 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDMessageIsCorrect(3.5)</span>
+                <span class="method-start">47996 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">48435 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">48435 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDMessageIsCorrect(3.5)</span>
+                <span class="method-start">48436 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">48887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">48887 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDMessageIsCorrect(11)</span>
+                <span class="method-start">48888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">49299 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void BodyTest.deleteInvalidIDMessageIsCorrect(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">49299 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteInvalidIDMessageIsCorrect(11)</span>
+                <span class="method-start">49299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">49683 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Get404</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void Get404.searchOrderByID400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">49683 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchOrderByID400(-1)</span>
+                <span class="method-start">49684 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">50135 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void Get404.searchOrderByID400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">50136 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchOrderByID400(0)</span>
+                <span class="method-start">50138 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">50551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void Get404.searchOrderByID400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">50552 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchOrderByID400(3.5)</span>
+                <span class="method-start">50553 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">51168 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void Get404.searchOrderByID400(java.lang.String) throws java.io.IOException)</span>
+                <span class="method-start">51169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchOrderByID400(11)</span>
+                <span class="method-start">51170 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">51590 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(public void Get404.nonExistingUrlReturns404() throws java.io.IOException)</span>
+                <span class="method-start">51591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">nonExistingUrlReturns404</span>
+                <span class="method-start">51592 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">closeResources</span>
+                <span class="method-start">51932 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

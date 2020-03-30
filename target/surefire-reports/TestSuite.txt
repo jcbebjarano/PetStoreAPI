@@ -1,0 +1,164 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 55, Failures: 28, Errors: 0, Skipped: 8, Time elapsed: 87.384 s <<< FAILURE! - in TestSuite
+BodyTest.deleteNotFoundMessageIsCorrect  Time elapsed: 0.386 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown]
+	at BodyTest.deleteNotFoundMessageIsCorrect(BodyTest.java:86)
+
+DeleteAndPost.createInvalidOrder400  Time elapsed: 0.501 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+
+DeleteAndPost.createInvalidOrder400  Time elapsed: 0.439 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+
+DeleteAndPost.createInvalidOrder400  Time elapsed: 0.319 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+
+DeleteAndPost.createInvalidOrder400  Time elapsed: 0.426 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+
+DeleteAndPost.createInvalidOrder400  Time elapsed: 0.455 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+
+DeleteAndPost.deleteInvalidIDSupplied  Time elapsed: 0.374 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+
+DeleteAndPost.deleteInvalidIDSupplied  Time elapsed: 0.434 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+
+DeleteAndPost.deleteInvalidIDSupplied  Time elapsed: 0.389 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+
+DeleteAndPost.deleteInvalidIDSupplied  Time elapsed: 0.362 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+
+DeleteAndPost.deleteInvalidIDSupplied  Time elapsed: 0.39 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+
+DeleteAndPost.deleteInvalidIDSupplied  Time elapsed: 0.429 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+
+DeleteAndPost.deleteInvalidIDSupplied  Time elapsed: 0.357 s  <<< FAILURE!
+java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+
+BodyTest.invalidIDSuppliedMessageIsCorrect  Time elapsed: 0.955 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Invalid ID supplied] but found [Order not found]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+
+BodyTest.invalidIDSuppliedMessageIsCorrect  Time elapsed: 0.497 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Invalid ID supplied] but found [Order not found]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+
+BodyTest.invalidIDSuppliedMessageIsCorrect  Time elapsed: 0.379 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+
+BodyTest.invalidIDSuppliedMessageIsCorrect  Time elapsed: 0.365 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [Invalid ID supplied] but found [Order not found]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+
+BodyTest.deleteInvalidIDMessageIsCorrect  Time elapsed: 0.533 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+
+BodyTest.deleteInvalidIDMessageIsCorrect  Time elapsed: 0.408 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+
+BodyTest.deleteInvalidIDMessageIsCorrect  Time elapsed: 0.455 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+
+BodyTest.deleteInvalidIDMessageIsCorrect  Time elapsed: 0.439 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+
+BodyTest.deleteInvalidIDMessageIsCorrect  Time elapsed: 0.451 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+
+BodyTest.deleteInvalidIDMessageIsCorrect  Time elapsed: 0.411 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+
+BodyTest.deleteInvalidIDMessageIsCorrect  Time elapsed: 0.383 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+
+Get404.searchOrderByID400  Time elapsed: 0.451 s  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+
+Get404.searchOrderByID400  Time elapsed: 0.413 s  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+
+Get404.searchOrderByID400  Time elapsed: 0.614 s  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+
+Get404.searchOrderByID400  Time elapsed: 0.42 s  <<< FAILURE!
+java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+

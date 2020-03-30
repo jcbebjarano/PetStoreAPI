@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="87.384" tests="55" errors="0" skipped="8" failures="28">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/camilobejarano/Documents/PETSTORE/module6/target/test-classes:/Users/camilobejarano/Documents/PETSTORE/module6/target/classes:/Users/camilobejarano/.m2/repository/org/json/json/20190722/json-20190722.jar:/Users/camilobejarano/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/camilobejarano/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/camilobejarano/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/camilobejarano/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/camilobejarano/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/camilobejarano/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/camilobejarano/.m2/repository/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.jar:/Users/camilobejarano/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/camilobejarano/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/camilobejarano/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/camilobejarano/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/camilobejarano/Documents/PETSTORE/module6/target/surefire/surefirebooter6633472184988039170.jar /Users/camilobejarano/Documents/PETSTORE/module6/target/surefire 2020-03-29T20-10-56_599-jvmRun1 surefire7339309468904373667tmp surefire_03795540184576303180tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/camilobejarano/Documents/PETSTORE/module6/target/test-classes:/Users/camilobejarano/Documents/PETSTORE/module6/target/classes:/Users/camilobejarano/.m2/repository/org/json/json/20190722/json-20190722.jar:/Users/camilobejarano/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/camilobejarano/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/camilobejarano/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/camilobejarano/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/camilobejarano/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/camilobejarano/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/camilobejarano/.m2/repository/org/apache/httpcomponents/httpclient/4.5.12/httpclient-4.5.12.jar:/Users/camilobejarano/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/camilobejarano/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/camilobejarano/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/camilobejarano/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/camilobejarano"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/camilobejarano/Documents/PETSTORE/module6"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/camilobejarano/Documents/PETSTORE/module6/target/surefire/surefirebooter6633472184988039170.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_241-b07"/>
+    <property name="user.name" value="camilobejarano"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/camilobejarano/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/xb/wgvkc89s3pb829t8znjnmn3h0000gp/T/"/>
+    <property name="java.version" value="1.8.0_241"/>
+    <property name="user.dir" value="/Users/camilobejarano/Documents/PETSTORE/module6"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/camilobejarano/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.241-b07"/>
+    <property name="java.ext.dirs" value="/Users/camilobejarano/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="createOrder200" classname="DeleteAndPost" time="0.766"/>
+  <testcase name="deleteIsSuccessful" classname="DeleteAndPost" time="0.379"/>
+  <testcase name="deleteOrderNotFound" classname="DeleteAndPost" time="0.389"/>
+  <testcase name="createInvalidOrder400" classname="DeleteAndPost" time="0">
+    <skipped message="Basic criteria failed,was expecting code 400, but got: 200"/>
+    <system-out><![CDATA[Starting test: createInvalidOrder400 with description: Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id
+Test Started: createInvalidOrder400
+Test Skipped: createInvalidOrder400
+Test DATA: [{"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="createInvalidOrder400" classname="DeleteAndPost" time="0">
+    <skipped message="Basic criteria failed,was expecting code 400, but got: 200"/>
+    <system-out><![CDATA[Starting test: createInvalidOrder400 with description: Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id
+Test Started: createInvalidOrder400
+Test Skipped: createInvalidOrder400
+Test DATA: [{"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="createInvalidOrder400" classname="DeleteAndPost" time="0.501">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 200" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+]]></failure>
+    <system-out><![CDATA[Starting test: createInvalidOrder400 with description: Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id
+Test Started: createInvalidOrder400
+Test FAILED: createInvalidOrder400
+Test DATA: [{"id": 1,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="createInvalidOrder400" classname="DeleteAndPost" time="0.432"/>
+  <testcase name="createInvalidOrder400" classname="DeleteAndPost" time="0.439">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 200" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+]]></failure>
+    <system-out><![CDATA[Starting test: createInvalidOrder400 with description: Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id
+Test Started: createInvalidOrder400
+Test FAILED: createInvalidOrder400
+Test DATA: [{"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="createInvalidOrder400" classname="DeleteAndPost" time="0.319">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 200" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+]]></failure>
+    <system-out><![CDATA[Starting test: createInvalidOrder400 with description: Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id
+Test Started: createInvalidOrder400
+Test FAILED: createInvalidOrder400
+Test DATA: [{"id": -12,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="createInvalidOrder400" classname="DeleteAndPost" time="0.426">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 200" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+]]></failure>
+    <system-out><![CDATA[Starting test: createInvalidOrder400 with description: Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id
+Test Started: createInvalidOrder400
+Test FAILED: createInvalidOrder400
+Test DATA: [{"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="createInvalidOrder400" classname="DeleteAndPost" time="0.455">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 200" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForPOSTResponse(DeleteAndPost.java:75)
+	at DeleteAndPost.createInvalidOrder400(DeleteAndPost.java:26)
+]]></failure>
+    <system-out><![CDATA[Starting test: createInvalidOrder400 with description: Verify place an invalid order 400 status code, CASE_1: Order with duplicated ID / CASE_2: Order without ID / CASE_3: Order with negative id / CASE_4: Order with non-integer id
+Test Started: createInvalidOrder400
+Test FAILED: createInvalidOrder400
+Test DATA: [{"id": 3.5,"petId": 1,"quantity": 5,"shipDate": "2020-03-20T21:39:50.300Z","status": "placed","complete": true }]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="createOrder500" classname="DeleteAndPost" time="1.091"/>
+  <testcase name="createOrder500" classname="DeleteAndPost" time="0.388"/>
+  <testcase name="deleteInvalidIDSupplied" classname="DeleteAndPost" time="0">
+    <skipped message="Basic criteria failed,was expecting code 400, but got: 404"/>
+    <system-out><![CDATA[Starting test: deleteInvalidIDSupplied with description: Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer
+Test Started: deleteInvalidIDSupplied
+Test Skipped: deleteInvalidIDSupplied
+Test DATA: [-1]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDSupplied" classname="DeleteAndPost" time="0">
+    <skipped message="Basic criteria failed,was expecting code 400, but got: 404"/>
+    <system-out><![CDATA[Starting test: deleteInvalidIDSupplied with description: Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer
+Test Started: deleteInvalidIDSupplied
+Test Skipped: deleteInvalidIDSupplied
+Test DATA: [-1]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDSupplied" classname="DeleteAndPost" time="0.374">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 404" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDSupplied with description: Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer
+Test Started: deleteInvalidIDSupplied
+Test FAILED: deleteInvalidIDSupplied
+Test DATA: [-1]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDSupplied" classname="DeleteAndPost" time="0.434">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 404" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDSupplied with description: Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer
+Test Started: deleteInvalidIDSupplied
+Test FAILED: deleteInvalidIDSupplied
+Test DATA: [0]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDSupplied" classname="DeleteAndPost" time="0.389">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 404" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDSupplied with description: Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer
+Test Started: deleteInvalidIDSupplied
+Test FAILED: deleteInvalidIDSupplied
+Test DATA: [0]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDSupplied" classname="DeleteAndPost" time="0.362">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 404" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDSupplied with description: Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer
+Test Started: deleteInvalidIDSupplied
+Test FAILED: deleteInvalidIDSupplied
+Test DATA: [3.5]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDSupplied" classname="DeleteAndPost" time="0.39">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 404" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDSupplied with description: Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer
+Test Started: deleteInvalidIDSupplied
+Test FAILED: deleteInvalidIDSupplied
+Test DATA: [3.5]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDSupplied" classname="DeleteAndPost" time="0.429">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 200" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 200
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDSupplied with description: Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer
+Test Started: deleteInvalidIDSupplied
+Test FAILED: deleteInvalidIDSupplied
+Test DATA: [11]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDSupplied" classname="DeleteAndPost" time="0.357">
+    <failure message="Basic criteria failed,was expecting code 400, but got: 404" type="java.io.IOException"><![CDATA[java.io.IOException: Basic criteria failed,was expecting code 400, but got: 404
+	at DeleteAndPost.getStatusForDeleteResponse(DeleteAndPost.java:92)
+	at DeleteAndPost.deleteInvalidIDSupplied(DeleteAndPost.java:50)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDSupplied with description: Verify delete an order 400 status code with invalid ID supplied, CASE_1: Negative ID / CASE_2: 0 ID / CASE_3: non-integer
+Test Started: deleteInvalidIDSupplied
+Test FAILED: deleteInvalidIDSupplied
+Test DATA: [11]
+Test CLASS: [TestClass name=class DeleteAndPost]
+]]></system-out>
+  </testcase>
+  <testcase name="inventoryReturns200" classname="Get200" time="0.352"/>
+  <testcase name="searchOrderByID200" classname="Get200" time="0.366"/>
+  <testcase name="returnsCorrectOrderBodyResponse" classname="BodyTest" time="0.578"/>
+  <testcase name="notFoundMessageIsCorrect" classname="BodyTest" time="0.381"/>
+  <testcase name="deleteNotFoundMessageIsCorrect" classname="BodyTest" time="0">
+    <skipped message="The following asserts failed:&#10;	expected [error] but found [unknown]"/>
+    <system-out><![CDATA[Starting test: deleteNotFoundMessageIsCorrect with description: Validate not found message in DELETE order responde body
+Test Started: deleteNotFoundMessageIsCorrect
+First assert Type
+Second assert Message
+Test Skipped: deleteNotFoundMessageIsCorrect
+Test DATA: [1]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteNotFoundMessageIsCorrect" classname="BodyTest" time="0">
+    <skipped message="The following asserts failed:&#10;	expected [error] but found [unknown]"/>
+    <system-out><![CDATA[Starting test: deleteNotFoundMessageIsCorrect with description: Validate not found message in DELETE order responde body
+Test Started: deleteNotFoundMessageIsCorrect
+First assert Type
+Second assert Message
+Test Skipped: deleteNotFoundMessageIsCorrect
+Test DATA: [1]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteNotFoundMessageIsCorrect" classname="BodyTest" time="0.386">
+    <failure message="The following asserts failed:&#10;	expected [error] but found [unknown]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown]
+	at BodyTest.deleteNotFoundMessageIsCorrect(BodyTest.java:86)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteNotFoundMessageIsCorrect with description: Validate not found message in DELETE order responde body
+Test Started: deleteNotFoundMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: deleteNotFoundMessageIsCorrect
+Test DATA: [1]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="invalidIDSuppliedMessageIsCorrect" classname="BodyTest" time="0.955">
+    <failure message="The following asserts failed:&#10;	expected [Invalid ID supplied] but found [Order not found]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [Invalid ID supplied] but found [Order not found]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+]]></failure>
+    <system-out><![CDATA[Starting test: invalidIDSuppliedMessageIsCorrect with description: Validate Invalid ID supplied message in GET order responde body
+Test Started: invalidIDSuppliedMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: invalidIDSuppliedMessageIsCorrect
+Test DATA: [-1]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="invalidIDSuppliedMessageIsCorrect" classname="BodyTest" time="0.497">
+    <failure message="The following asserts failed:&#10;	expected [Invalid ID supplied] but found [Order not found]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [Invalid ID supplied] but found [Order not found]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+]]></failure>
+    <system-out><![CDATA[Starting test: invalidIDSuppliedMessageIsCorrect with description: Validate Invalid ID supplied message in GET order responde body
+Test Started: invalidIDSuppliedMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: invalidIDSuppliedMessageIsCorrect
+Test DATA: [0]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="invalidIDSuppliedMessageIsCorrect" classname="BodyTest" time="0.379">
+    <failure message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: &quot;3.5&quot;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+]]></failure>
+    <system-out><![CDATA[Starting test: invalidIDSuppliedMessageIsCorrect with description: Validate Invalid ID supplied message in GET order responde body
+Test Started: invalidIDSuppliedMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: invalidIDSuppliedMessageIsCorrect
+Test DATA: [3.5]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="invalidIDSuppliedMessageIsCorrect" classname="BodyTest" time="0.365">
+    <failure message="The following asserts failed:&#10;	expected [Invalid ID supplied] but found [Order not found]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [Invalid ID supplied] but found [Order not found]
+	at BodyTest.invalidIDSuppliedMessageIsCorrect(BodyTest.java:71)
+]]></failure>
+    <system-out><![CDATA[Starting test: invalidIDSuppliedMessageIsCorrect with description: Validate Invalid ID supplied message in GET order responde body
+Test Started: invalidIDSuppliedMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: invalidIDSuppliedMessageIsCorrect
+Test DATA: [11]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDMessageIsCorrect" classname="BodyTest" time="0">
+    <skipped message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [Order Not Found]"/>
+    <system-out><![CDATA[Starting test: deleteInvalidIDMessageIsCorrect with description: Validate invalid ID supplied message in DELETE order responde body
+Test Started: deleteInvalidIDMessageIsCorrect
+First assert Type
+Second assert Message
+Test Skipped: deleteInvalidIDMessageIsCorrect
+Test DATA: [-1]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDMessageIsCorrect" classname="BodyTest" time="0">
+    <skipped message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [Order Not Found]"/>
+    <system-out><![CDATA[Starting test: deleteInvalidIDMessageIsCorrect with description: Validate invalid ID supplied message in DELETE order responde body
+Test Started: deleteInvalidIDMessageIsCorrect
+First assert Type
+Second assert Message
+Test Skipped: deleteInvalidIDMessageIsCorrect
+Test DATA: [-1]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDMessageIsCorrect" classname="BodyTest" time="0.533">
+    <failure message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [Order Not Found]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDMessageIsCorrect with description: Validate invalid ID supplied message in DELETE order responde body
+Test Started: deleteInvalidIDMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: deleteInvalidIDMessageIsCorrect
+Test DATA: [-1]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDMessageIsCorrect" classname="BodyTest" time="0.408">
+    <failure message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [Order Not Found]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDMessageIsCorrect with description: Validate invalid ID supplied message in DELETE order responde body
+Test Started: deleteInvalidIDMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: deleteInvalidIDMessageIsCorrect
+Test DATA: [0]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDMessageIsCorrect" classname="BodyTest" time="0.455">
+    <failure message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [Order Not Found]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDMessageIsCorrect with description: Validate invalid ID supplied message in DELETE order responde body
+Test Started: deleteInvalidIDMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: deleteInvalidIDMessageIsCorrect
+Test DATA: [0]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDMessageIsCorrect" classname="BodyTest" time="0.439">
+    <failure message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: &quot;3.5&quot;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDMessageIsCorrect with description: Validate invalid ID supplied message in DELETE order responde body
+Test Started: deleteInvalidIDMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: deleteInvalidIDMessageIsCorrect
+Test DATA: [3.5]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDMessageIsCorrect" classname="BodyTest" time="0.451">
+    <failure message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: &quot;3.5&quot;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [java.lang.NumberFormatException: For input string: "3.5"]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDMessageIsCorrect with description: Validate invalid ID supplied message in DELETE order responde body
+Test Started: deleteInvalidIDMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: deleteInvalidIDMessageIsCorrect
+Test DATA: [3.5]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDMessageIsCorrect" classname="BodyTest" time="0.411">
+    <failure message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [Order Not Found]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDMessageIsCorrect with description: Validate invalid ID supplied message in DELETE order responde body
+Test Started: deleteInvalidIDMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: deleteInvalidIDMessageIsCorrect
+Test DATA: [11]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="deleteInvalidIDMessageIsCorrect" classname="BodyTest" time="0.383">
+    <failure message="The following asserts failed:&#10;	expected [error] but found [unknown],&#10;	expected [Invalid ID supplied] but found [Order Not Found]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+The following asserts failed:
+	expected [error] but found [unknown],
+	expected [Invalid ID supplied] but found [Order Not Found]
+	at BodyTest.deleteInvalidIDMessageIsCorrect(BodyTest.java:101)
+]]></failure>
+    <system-out><![CDATA[Starting test: deleteInvalidIDMessageIsCorrect with description: Validate invalid ID supplied message in DELETE order responde body
+Test Started: deleteInvalidIDMessageIsCorrect
+First assert Type
+Second assert Message
+Test FAILED: deleteInvalidIDMessageIsCorrect
+Test DATA: [11]
+Test CLASS: [TestClass name=class BodyTest]
+]]></system-out>
+  </testcase>
+  <testcase name="searchOrderByID404" classname="Get404" time="0.7"/>
+  <testcase name="searchOrderByID400" classname="Get404" time="0.451">
+    <failure message="expected [400] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+]]></failure>
+    <system-out><![CDATA[Starting test: searchOrderByID400 with description: Verify 400 status code for GET method with Invalid ID supplied
+Test Started: searchOrderByID400
+Test FAILED: searchOrderByID400
+Test DATA: [-1]
+Test CLASS: [TestClass name=class Get404]
+]]></system-out>
+  </testcase>
+  <testcase name="searchOrderByID400" classname="Get404" time="0.413">
+    <failure message="expected [400] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+]]></failure>
+    <system-out><![CDATA[Starting test: searchOrderByID400 with description: Verify 400 status code for GET method with Invalid ID supplied
+Test Started: searchOrderByID400
+Test FAILED: searchOrderByID400
+Test DATA: [0]
+Test CLASS: [TestClass name=class Get404]
+]]></system-out>
+  </testcase>
+  <testcase name="searchOrderByID400" classname="Get404" time="0.614">
+    <failure message="expected [400] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+]]></failure>
+    <system-out><![CDATA[Starting test: searchOrderByID400 with description: Verify 400 status code for GET method with Invalid ID supplied
+Test Started: searchOrderByID400
+Test FAILED: searchOrderByID400
+Test DATA: [3.5]
+Test CLASS: [TestClass name=class Get404]
+]]></system-out>
+  </testcase>
+  <testcase name="searchOrderByID400" classname="Get404" time="0.42">
+    <failure message="expected [400] but found [404]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [400] but found [404]
+	at Get404.getStatusFotGetResponse(Get404.java:45)
+	at Get404.searchOrderByID400(Get404.java:35)
+]]></failure>
+    <system-out><![CDATA[Starting test: searchOrderByID400 with description: Verify 400 status code for GET method with Invalid ID supplied
+Test Started: searchOrderByID400
+Test FAILED: searchOrderByID400
+Test DATA: [11]
+Test CLASS: [TestClass name=class Get404]
+]]></system-out>
+  </testcase>
+  <testcase name="nonExistingUrlReturns404" classname="Get404" time="0.34"/>
+  <testcase name="contentTypeIsJson" classname="ResponseHeaders" time="0.345"/>
+  <testcase name="contentTypeIsJson" classname="ResponseHeaders" time="1.53"/>
+  <testcase name="serverIsJetty" classname="ResponseHeaders" time="0.406"/>
+  <testcase name="serverIsJetty" classname="ResponseHeaders" time="0.458"/>
+  <testcase name="dateIsPresent" classname="ResponseHeaders" time="0.425"/>
+  <testcase name="dateIsPresent" classname="ResponseHeaders" time="0.429"/>
+  <testcase name="optionsReturnsCorrectMethodsList" classname="Options204" time="0.407"/>
+</testsuite>
