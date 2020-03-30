@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [All Tests]">
+  <listeners>
+    <listener class-name="listeners.TestStatus"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="GET_404(failed)">
+    <classes>
+      <class name="BodyTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeResources"/>
+          <include name="deleteNotFoundMessageIsCorrect" invocation-numbers="0 0 0"/>
+        </methods>
+      </class> <!-- BodyTest -->
+    </classes>
+  </test> <!-- GET_404(failed) -->
+  <test thread-count="5" verbose="0" name="NEGATIVE_TEST(failed)">
+    <classes>
+      <class name="DeleteAndPost">
+        <methods>
+          <include name="setup"/>
+          <include name="closeResources"/>
+          <include name="deleteInvalidIDSupplied" invocation-numbers="0 0 0 1 1 2 2 3 3"/>
+          <include name="createInvalidOrder400" invocation-numbers="0 0 0 2 2 3 3"/>
+        </methods>
+      </class> <!-- DeleteAndPost -->
+      <class name="Get404">
+        <methods>
+          <include name="setup"/>
+          <include name="searchOrderByID400" invocation-numbers="0 1 2 3"/>
+          <include name="closeResources"/>
+        </methods>
+      </class> <!-- Get404 -->
+      <class name="BodyTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closeResources"/>
+          <include name="invalidIDSuppliedMessageIsCorrect" invocation-numbers="0 1 2 3"/>
+          <include name="deleteInvalidIDMessageIsCorrect" invocation-numbers="0 0 0 1 1 2 2 3 3"/>
+        </methods>
+      </class> <!-- BodyTest -->
+    </classes>
+  </test> <!-- NEGATIVE_TEST(failed) -->
+</suite> <!-- Failed suite [All Tests] -->
