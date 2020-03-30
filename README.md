@@ -4,10 +4,11 @@ Testing and automated checks challenge (B) - adidas app team.
 - The pet store API code is A backend - REST API tests using Apache HttpClient in a MAVEN project based on TestNG an open-source automated testing framework for JAVA.
 
 Includes and demonstrates:
-- Validate the POST web service status codes to place an order for a pet.
-- Verify find purchase order by ID web service including status codes, header and body response data.
-- Validate Delete purchase order by ID web service including status codes, header and body response data.
-- Verify Returns pet inventories by status web service status codes and body response data.
+- Service: store (Access to Petstore orders)
+  - Validate the POST web service status codes to place an order for a pet.
+  - Verify find purchase order by ID web service including status codes, header and body response data.
+  - Validate Delete purchase order by ID web service including status codes, header and body response data.
+  - Verify Returns pet inventories by status web service status codes and body response data.
 
 
 # Run and build the project via bash/terminal:
